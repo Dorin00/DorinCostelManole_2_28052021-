@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Raleway1';
+    src: url('fontz/Raleway-VariableFont_wght.ttf') format('ttf');
+   font-weight: normal;
+   font-style: normal;
+}
+
+#bloc_page{
+    width: 900px;
+    margin: auto;
+}
+
+.logo img{
+    width: 75px;
+    height: 60px;
+}
+
+header h1{
+    padding-top: 20px;
+}
+
