@@ -20,7 +20,7 @@
 /* Header */
 
 .logo img{
-    width: 103px;
+    width: 120px;
     height: 50px;
 }
 
@@ -28,13 +28,13 @@ header h1, section h1, aside h1, footer h1{
     padding-top: 25px;
     font-family: 'Raleway1', sans-serif;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.7em;
 }
 
 body p{
     font-family: 'Raleway2', sans-serif;
     font-weight: normal;
-    font-size: 0.9em;
+    font-size: 1.1em;
     color: rgb(113, 120, 130);
     
 }
@@ -45,9 +45,9 @@ body p{
 
 
 .recherche input[type=text]{
-    width: 205px;
-    padding: 10px;
-    margin-left: 40px;
+    width: 320px;
+    padding: 15px;
+    margin-left: 57px;
     margin-bottom: 40px;
     margin-top: 51px;
     box-sizing: border-box;
@@ -59,39 +59,39 @@ body p{
 .position{
     margin-top: 19px;
     background-color: rgba(229, 229, 235, 0.945);
-    width: 40px;
-    height: 39px;
-    margin-bottom: -90px;
-    border-radius: 11px 0px 0px 11px;
+    width: 57px;
+    height: 49px;
+    margin-bottom: -100px;
+    border-radius: 18px 0px 0px 18px;
 }
 
 .position i{
     position:relative;
-    right: -15px;
-    bottom: -10px;
+    right: -23px;
+    bottom: -15px;
     color: rgb(45, 109, 226);
 
 }
 
 .bouton{
     background-color:rgb(45, 109, 226);
-    width: 110px;
-    height: 38px;
-    margin-left: 245px;
-    margin-top: -78px;
-    border-radius: 0px 11px 11px 0px;
+    width: 156px;
+    height: 48px;
+    margin-left: 376px;
+    margin-top: -88px;
+    border-radius: 0px 18px 18px 0px;
 }
 
 .bouton a{
     color: white;
     font-family: 'Raleway2', sans-serif;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 1.1em;
     text-decoration: none;
 
     position: relative;
-    right: -13px;
-    bottom: -8px;
+    right: -17px;
+    bottom: -13px;
 }
 
 nav ul{
@@ -107,7 +107,7 @@ nav li a{
 
     font-family: 'Raleway2', sans-serif; 
     font-weight: normal;
-    font-size: 0.9em;
+    font-size: 1.1em;
 
     text-decoration: none;
     color: rgb(113, 120, 130);
@@ -120,37 +120,176 @@ nav a:hover{
     
 }
 
-.filtres ul{
-    list-style-type: none;
-    display: flex;
+ .filtres{
+     font-family: 'Raleway2', sans-serif;
+     font-size: 0.9em;
+     font-weight: bold;
+     
+     display: flex;
+     align-items: center;
+
+     margin-top: 22px;
+     width: 700px;
+ }
+
+ .filtres ul{
+     list-style-type: none;
+     display: flex;
+     margin-right: 20px;
+ }
+
+ .filtres a{
+     text-decoration: none;
+     margin-right: 30px;
+
+     color: black; 
+
+     border: 1px rgb(170, 177, 187) solid;
+     padding: 7px 11px 7px 20px;
+     border-radius: 0px 16px 16px 0px;
 }
 
-.filtres{
-    margin-top: 20px;
+ .icones_filtres{
+     display: flex;
+     margin-top: -30px;
+ }
 
+ .money{
+     background-color:rgb(190, 225, 253);
+     height: 32px;
+     width: 32px;
+     border-radius: 100%;
+     margin-left: 65px;
+     margin-top: -8px;
+ }
+
+ .money i{
+     color: rgb(45, 109, 226);
+     position: relative;
+     right: -5px;
+     bottom: -6px;
+ }
+
+ .money:hover{
+     transform: scale(1.2, 1.2);
+     transition: 0.5s ease-in-out;
+ }
+
+ .child{
+    background-color:rgb(190, 225, 253);
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    margin-left: 105px;
+    margin-top: -8px;
+ }
+
+ .child i{
+    color: rgb(45, 109, 226);
+    position: relative;
+    right: -10px;
+    bottom: -6px;
+}
+
+.child:hover{
+    transform: scale(1.2, 1.2);
+    transition: 0.5s ease-in-out;
+}
+
+.heart{
+    background-color:rgb(190, 225, 253);
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    margin-left: 80px;
+    margin-top: -8px;
+ }
+
+.heart i{
+    color: rgb(45, 109, 226);
+    position: relative;
+    right: -8px;
+    bottom: -8px;
+}
+
+.heart:hover{
+    transform: scale(1.2, 1.2);
+    transition: 0.5s ease-in-out;
+}
+
+.dog {
+    background-color:rgb(190, 225, 253);
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    margin-left: 115px;
+    margin-top: -8px;
+ }
+
+ .dog i{
+    color: rgb(45, 109, 226);
+    position: relative;
+    right: -7px;
+    bottom: -5px;
+}
+
+.dog:hover{
+    transform: scale(1.2, 1.2);
+    transition: 0.5s ease-in-out;
+}
+
+.infos{
+    margin-top: 20px;
+}
+
+.infos a {
     display: flex;
     align-items: center;
-    font-family: 'Raleway2', sans-serif;
-    font-weight: bold;
-    font-size: 0.9em;
-    color: black;
-}
-
-.filtres li a{
-    margin-right: 15px;
-    color: black;
+    color: rgb(113, 120, 130);
     text-decoration: none;
-    border: 1px black solid;
 
-    position: relative;
-    height: -10px;
-    bottom: -10px;
 }
 
-.filtres .fas{
-    color: rgb(45, 109, 226);
-    background-color: skyblue;
-    width: 35px;
-    height: 35px;
+.circleinf{
+    border: 1px rgb(113, 120, 130) solid;
     border-radius: 100%;
+    margin-right: 16px;
+}
+
+.circleinf i{
+    color: rgb(45, 109, 226);
+    position: relative;
+    margin: 3px 8px;
+
+}
+
+/* Section */
+
+#hebergements h1{
+    padding-left: 30px;
+}
+
+#hebergements{
+    background-color: rgba(229, 229, 235, 0.945);
+    border-radius: 20px;
+    height: 800px;
+    width: 1000px;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+#hebergements img{
+    width: 239px;
+    height: 120px;
+    border-radius: 14px 14px 0px 0px;
+    padding: 5px;
+}
+
+#hebergements figure{
+    background-color: white;
+    border: 1px solid white;
+    width: 250px;
+    height: 200;
+    border-radius: 14px 14px 14px 14px;
 }
