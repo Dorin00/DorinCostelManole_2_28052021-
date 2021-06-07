@@ -69,7 +69,7 @@ body p{
     position:relative;
     right: -23px;
     bottom: -15px;
-    color: rgb(45, 109, 226);
+    color: black;
 
 }
 
@@ -265,31 +265,138 @@ nav a:hover{
 
 /* Section */
 
-#hebergements h1{
-    padding-left: 30px;
+#heb_title{
+    margin-top: 100px;
+    margin-left: 30px;
 }
 
 #hebergements{
     background-color: rgba(229, 229, 235, 0.945);
     border-radius: 20px;
-    height: 800px;
-    width: 1000px;
+    height: 880px;
+    width: 1230px; 
     display: flex;
-    align-content: space-between;
+    flex-direction: column;
     flex-wrap: wrap;
+    margin-top: -110px;
 }
 
 #hebergements img{
+    width: 323px;
+    height: 165px;
+    border-radius: 14px 14px 0px 0px;
+    margin-top: -3px;
+    margin-left: 8px;
+}
+
+#hebergements figure{
+    background-color: white;
+    border: 1px solid white;
+    width: 340px;
+    height: 280px;
+    border-radius: 25px;
+    margin-top: 120px;
+    margin-right: -40px;
+    margin-bottom: -65px;
+    box-shadow: rgba(194, 194, 194, 0.753) 4px 4px 5px;
+}
+
+#hebergements a{
+    text-decoration: none;
+}
+
+#hebergements strong{
+    color: black;
+    font-family: 'Raleway2', sans-serif;
+    font-weight: bold;
+}
+
+#hebergements p{
+    font-size: 0.9em;
+    font-weight: bold;
+    font-family: 'Raleway2', sans-serif;
+}
+
+#hebergements div{
+    margin-top: -17px;
+}
+
+.aff_plus a{
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Raleway2', sans-serif;
+    color: black;
+
+}
+
+.aff_plus{
+    margin-left: -1130px;
+    padding-top: 800px;
+}
+
+/* Rating Stars*/
+
+.stars input{
+    /*display: none; */
+}
+ 
+.stars label{
+    display: inline;
+    cursor: pointer;
+    background-color: gray;
+}
+
+.stars label:before{
+    content: '\f005';
+    font-family: fontAwesome;
+}
+
+/* Aside Populaires */
+
+aside{
+    background-color: rgba(229, 229, 235, 0.945);
+    border-radius: 20px;
+    height: 800px;
+    width: 580px; 
+    display: flex;
+    flex-direction: column;
+    margin-left: 1300px;
+    margin-top: -800px;
+}
+
+aside img{
     width: 239px;
     height: 120px;
     border-radius: 14px 14px 0px 0px;
     padding: 5px;
 }
 
-#hebergements figure{
+aside figure{
     background-color: white;
     border: 1px solid white;
-    width: 250px;
-    height: 200;
+    width: 450px;
+    height: 150px;
     border-radius: 14px 14px 14px 14px;
+    display: flex;
+}
+
+aside a{
+    text-decoration: none;
+}
+
+aside strong{
+    color: black;
+    font-family: 'Raleway2', sans-serif;
+    font-weight: bold;
+}
+
+aside p{
+    font-size: 0.9em;
+    font-weight: bold;
+    font-family: 'Raleway2', sans-serif;
+}
+
+aside div{
+    margin-top: -17px;
 }
