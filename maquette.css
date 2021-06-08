@@ -357,28 +357,50 @@ nav a:hover{
 aside{
     background-color: rgba(229, 229, 235, 0.945);
     border-radius: 20px;
-    height: 800px;
+    height: 880px;
     width: 580px; 
     display: flex;
     flex-direction: column;
     margin-left: 1300px;
-    margin-top: -800px;
+    margin-top: -880px;
+}
+
+#tit_pop{
+    display: flex;
+    margin-top: 35px;
+    margin-left: 35px;
+}
+
+#tit_pop i{
+    margin-top: 25px;
+    margin-left: 240px;
+
 }
 
 aside img{
-    width: 239px;
-    height: 120px;
-    border-radius: 14px 14px 0px 0px;
-    padding: 5px;
+    width: 180px;
+    height: 170px;
+    border-radius: 14px 0px 0px 14px;
+    margin-top: -3px;
+    margin-left: 8px;
 }
 
 aside figure{
     background-color: white;
     border: 1px solid white;
-    width: 450px;
-    height: 150px;
-    border-radius: 14px 14px 14px 14px;
+    width: 480px;
+    height: 190px;
+    border-radius: 25px;
     display: flex;
+    margin-bottom: 45px;
+}
+
+.infos_pop{
+    margin-top: 30px;
+    margin-left: 20px;
+    
+    font-family: 'Raleway2', sans-serif;
+    font-weight: bold;
 }
 
 aside a{
@@ -399,4 +421,99 @@ aside p{
 
 aside div{
     margin-top: -17px;
+}
+
+/* ACT Marseille*/
+
+#activites{
+    display: flex;
+    margin-top: 50px;
+}
+
+#activites img{
+    border-radius: 20px 20px 0px 0px;
+}
+
+#activites figcaption{
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    border: 1px rgb(170, 177, 187) solid;
+    padding: 15px 0px 15px 15px;
+    margin-top: -20px;
+
+}
+
+#activites a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Raleway2', sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.big_a img{
+    width: 450px;
+    height: 620px;
+}
+
+.small_a img{
+    width: 350px;
+    height: 210px;
+    margin-top: 70px;
+}
+
+.diff_small_a img{
+    width: 350px;
+    height: 290px;
+    margin-top: -3px;
+    margin-bottom: -5px;
+}
+
+#act_1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-left: -250px;
+    width: 900px;
+    height: 700px;
+}
+
+#act_2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60px;
+    width: 900px;
+    height: 700px;
+    margin-left: 60px;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -250px;
+    margin-top: 30px;
+    padding-top: 30px;
+
+
+    background-color: rgba(229, 229, 235, 0.945);
+}
+
+footer p{
+    color: black;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer li a{
+    text-decoration: none;
+    color: rgb(113, 120, 130); 
+    font-family: 'Raleway2', sans-serif;
 }
