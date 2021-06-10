@@ -58,7 +58,7 @@ body p{
 
 .position{
     margin-top: 19px;
-    background-color: rgba(229, 229, 235, 0.945);
+    background-color: rgba(238, 238, 238, 0.781);
     width: 57px;
     height: 49px;
     margin-bottom: -100px;
@@ -122,31 +122,32 @@ nav a:hover{
 
  .filtres{
      font-family: 'Raleway2', sans-serif;
-     font-size: 0.9em;
+     font-size: 1em;
      font-weight: bold;
      
      display: flex;
      align-items: center;
 
-     margin-top: 22px;
-     width: 700px;
+     margin-top: 27px;
+     width: 1100px;
  }
 
  .filtres ul{
      list-style-type: none;
      display: flex;
-     margin-right: 20px;
+     margin-right: 40px;
  }
 
  .filtres a{
      text-decoration: none;
-     margin-right: 30px;
+     margin-right: 60px;
+     margin-left: 40px;
 
      color: black; 
 
      border: 1px rgb(170, 177, 187) solid;
-     padding: 7px 11px 7px 20px;
-     border-radius: 0px 16px 16px 0px;
+     padding: 11px 18px 11px 22px;
+     border-radius: 0px 20px 20px 0px;
 }
 
  .icones_filtres{
@@ -156,18 +157,18 @@ nav a:hover{
 
  .money{
      background-color:rgb(190, 225, 253);
-     height: 32px;
-     width: 32px;
+     height: 43px;
+     width: 44px;
      border-radius: 100%;
-     margin-left: 65px;
-     margin-top: -8px;
+     margin-left: 100px;
+     margin-top: -18px;
  }
 
  .money i{
      color: rgb(45, 109, 226);
      position: relative;
-     right: -5px;
-     bottom: -6px;
+     right: -12px;
+     bottom: -12px;
  }
 
  .money:hover{
@@ -177,18 +178,18 @@ nav a:hover{
 
  .child{
     background-color:rgb(190, 225, 253);
-    height: 32px;
-    width: 32px;
+    height: 43px;
+    width: 44px;
     border-radius: 100%;
-    margin-left: 105px;
-    margin-top: -8px;
+    margin-left: 175px;
+    margin-top: -18px;
  }
 
  .child i{
     color: rgb(45, 109, 226);
     position: relative;
-    right: -10px;
-    bottom: -6px;
+    right: -16px;
+    bottom: -12px;
 }
 
 .child:hover{
@@ -198,18 +199,18 @@ nav a:hover{
 
 .heart{
     background-color:rgb(190, 225, 253);
-    height: 32px;
-    width: 32px;
+    height: 43px;
+    width: 44px;
     border-radius: 100%;
-    margin-left: 80px;
-    margin-top: -8px;
+    margin-left: 156px;
+    margin-top: -18px;
  }
 
 .heart i{
     color: rgb(45, 109, 226);
     position: relative;
-    right: -8px;
-    bottom: -8px;
+    right: -14px;
+    bottom: -13px;
 }
 
 .heart:hover{
@@ -219,18 +220,18 @@ nav a:hover{
 
 .dog {
     background-color:rgb(190, 225, 253);
-    height: 32px;
-    width: 32px;
+    height: 43px;
+    width: 44px;
     border-radius: 100%;
-    margin-left: 115px;
-    margin-top: -8px;
+    margin-left: 194px;
+    margin-top: -18px;
  }
 
  .dog i{
     color: rgb(45, 109, 226);
     position: relative;
-    right: -7px;
-    bottom: -5px;
+    right: -13px;
+    bottom: -12px;
 }
 
 .dog:hover{
@@ -270,8 +271,14 @@ nav a:hover{
     margin-left: 30px;
 }
 
+#heb_title h1{
+    font-family: 'Raleway2', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+
 #hebergements{
-    background-color: rgba(229, 229, 235, 0.945);
+    background-color: rgba(238, 238, 238, 0.781);
     border-radius: 20px;
     height: 880px;
     width: 1230px; 
@@ -301,6 +308,10 @@ nav a:hover{
     box-shadow: rgba(194, 194, 194, 0.753) 4px 4px 5px;
 }
 
+#hebergements figcaption{
+    padding-left: 15px;
+}
+
 #hebergements a{
     text-decoration: none;
 }
@@ -321,6 +332,19 @@ nav a:hover{
     margin-top: -17px;
 }
 
+#hebergements .rating .blue{ 
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    color: rgb(170, 177, 187);
+    margin-top: 10px;
+}
+
+.blue i{
+    color: rgb(45, 109, 226);
+    
+}
+
 .aff_plus a{
     font-size: 1.1em;
     font-weight: bold;
@@ -335,27 +359,10 @@ nav a:hover{
     padding-top: 800px;
 }
 
-/* Rating Stars*/
-
-.stars input{
-    /*display: none; */
-}
- 
-.stars label{
-    display: inline;
-    cursor: pointer;
-    background-color: gray;
-}
-
-.stars label:before{
-    content: '\f005';
-    font-family: fontAwesome;
-}
-
 /* Aside Populaires */
 
 aside{
-    background-color: rgba(229, 229, 235, 0.945);
+    background-color: rgba(238, 238, 238, 0.781);
     border-radius: 20px;
     height: 880px;
     width: 580px; 
@@ -367,14 +374,19 @@ aside{
 
 #tit_pop{
     display: flex;
+    justify-content: space-around;
     margin-top: 35px;
     margin-left: 35px;
 }
 
 #tit_pop i{
-    margin-top: 25px;
-    margin-left: 240px;
+    margin-top: 18px;
+}
 
+#tit_pop h2{
+    font-family: 'Raleway2', sans-serif;
+    font-size: 1.5em;
+    margin-left: -70px;
 }
 
 aside img{
@@ -393,6 +405,7 @@ aside figure{
     border-radius: 25px;
     display: flex;
     margin-bottom: 45px;
+    box-shadow: rgba(194, 194, 194, 0.753) 4px 4px 5px;
 }
 
 .infos_pop{
@@ -423,11 +436,32 @@ aside div{
     margin-top: -17px;
 }
 
+.rating{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    color: rgb(170, 177, 187);
+    margin-top: 55px;
+}
+
+aside .blue{
+    color: rgb(45, 109, 226);
+    display: flex;
+    align-items: baseline;
+    direction: row;
+    margin-top: 15px;
+
+}
 /* ACT Marseille*/
 
 #activites{
     display: flex;
     margin-top: 50px;
+}
+
+#activites h2{
+    font-family: 'Raleway2', sans-serif;
+    font-weight: bold;
 }
 
 #activites img{
@@ -441,6 +475,8 @@ aside div{
     padding: 15px 0px 15px 15px;
     margin-top: -20px;
 
+    box-shadow: rgba(194, 194, 194, 0.753) 4px 4px 4px;
+
 }
 
 #activites a{
@@ -451,22 +487,45 @@ aside div{
     font-size: 0.9em;
 }
 
+#pomegues{
+    width: 350px;
+    height: 300px;
+    margin-top: -3px;
+    margin-bottom: -5px;
+}
+
+#frioul{
+    height: 200px;
+    width: 350px;
+    margin-top: 45px;
+}
+
+#garde{
+    width: 350px;
+    height: 240px;
+}
+
+#longchamp{
+    width: 350px;
+    height: 245px;
+    margin-top: 45px;
+}
+
 .big_a img{
     width: 450px;
     height: 620px;
 }
 
-.small_a img{
-    width: 350px;
-    height: 210px;
-    margin-top: 70px;
+#act_1 .small_a{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
-.diff_small_a img{
-    width: 350px;
-    height: 290px;
-    margin-top: -3px;
-    margin-bottom: -5px;
+#act_2 .small_a{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 #act_1{
@@ -485,27 +544,31 @@ aside div{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 60px;
     width: 900px;
     height: 700px;
-    margin-left: 60px;
 }
 
 /* FOOTER */
 
 footer{
     display: flex;
-    justify-content: space-around;
-    margin-left: -250px;
+    justify-content: flex-start;
+    flex-direction: row;
     margin-top: 30px;
     padding-top: 30px;
+    padding-left: 40px;
 
-
-    background-color: rgba(229, 229, 235, 0.945);
+    background-color: rgba(238, 238, 238, 0.781);
 }
 
+footer div{
+    margin-right: 300px;
+    display: flex;
+    flex-direction: column;
+}
 footer p{
     color: black;
+    
 }
 
 footer ul{
@@ -516,4 +579,5 @@ footer li a{
     text-decoration: none;
     color: rgb(113, 120, 130); 
     font-family: 'Raleway2', sans-serif;
+    margin-left: -40px;
 }
