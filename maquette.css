@@ -122,14 +122,14 @@ nav a:hover{
 
  .filtres{
      font-family: 'Raleway2', sans-serif;
-     font-size: 1em;
-     font-weight: bold;
+     font-size: large;
+     font-weight: normal;
      
      display: flex;
      align-items: center;
 
      margin-top: 27px;
-     width: 1100px;
+     width: 1500px;
  }
 
  .filtres ul{
@@ -146,8 +146,8 @@ nav a:hover{
      color: black; 
 
      border: 1px rgb(170, 177, 187) solid;
-     padding: 11px 18px 11px 22px;
-     border-radius: 0px 20px 20px 0px;
+     padding: 15px 35px 15px 75px;
+     border-radius: 25px 30px 30px 25px;
 }
 
  .icones_filtres{
@@ -157,18 +157,18 @@ nav a:hover{
 
  .money{
      background-color:rgb(190, 225, 253);
-     height: 43px;
-     width: 44px;
+     height: 53px;
+     width: 54px;
      border-radius: 100%;
-     margin-left: 100px;
-     margin-top: -18px;
+     margin-left: 135px;
+     margin-top: -26px;
  }
 
  .money i{
      color: rgb(45, 109, 226);
      position: relative;
-     right: -12px;
-     bottom: -12px;
+     right: -17px;
+     bottom: -16px;
  }
 
  .money:hover{
@@ -178,18 +178,18 @@ nav a:hover{
 
  .child{
     background-color:rgb(190, 225, 253);
-    height: 43px;
-    width: 44px;
+    height: 53px;
+    width: 54px;
     border-radius: 100%;
-    margin-left: 175px;
-    margin-top: -18px;
+    margin-left: 237px;
+    margin-top: -26px;
  }
 
  .child i{
     color: rgb(45, 109, 226);
     position: relative;
-    right: -16px;
-    bottom: -12px;
+    right: -21px;
+    bottom: -16px;
 }
 
 .child:hover{
@@ -199,18 +199,18 @@ nav a:hover{
 
 .heart{
     background-color:rgb(190, 225, 253);
-    height: 43px;
-    width: 44px;
+    height: 53px;
+    width: 54px;
     border-radius: 100%;
-    margin-left: 156px;
-    margin-top: -18px;
+    margin-left: 219px;
+    margin-top: -26px;
  }
 
 .heart i{
     color: rgb(45, 109, 226);
     position: relative;
-    right: -14px;
-    bottom: -13px;
+    right: -19px;
+    bottom: -17px;
 }
 
 .heart:hover{
@@ -220,18 +220,18 @@ nav a:hover{
 
 .dog {
     background-color:rgb(190, 225, 253);
-    height: 43px;
-    width: 44px;
+    height: 53px;
+    width: 54px;
     border-radius: 100%;
-    margin-left: 194px;
-    margin-top: -18px;
+    margin-left: 254px;
+    margin-top: -26px;
  }
 
  .dog i{
     color: rgb(45, 109, 226);
     position: relative;
-    right: -13px;
-    bottom: -12px;
+    right: -18px;
+    bottom: -15px;
 }
 
 .dog:hover{
@@ -266,9 +266,12 @@ nav a:hover{
 
 /* Section */
 
+
 #heb_title{
     margin-top: 100px;
-    margin-left: 30px;
+    margin-left: 20px;
+    margin-bottom: -102px;
+    margin-right: -40px;
 }
 
 #heb_title h1{
@@ -285,7 +288,7 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: -110px;
+    margin-top: 45px;
 }
 
 #hebergements img{
@@ -302,19 +305,18 @@ nav a:hover{
     width: 340px;
     height: 280px;
     border-radius: 25px;
-    margin-top: 120px;
-    margin-right: -40px;
+    margin-top: 120px; 
+    margin-left: 20px;
     margin-bottom: -65px;
     box-shadow: rgba(194, 194, 194, 0.753) 4px 4px 5px;
 }
-
 #hebergements figcaption{
     padding-left: 15px;
 }
 
 #hebergements a{
     text-decoration: none;
-}
+} 
 
 #hebergements strong{
     color: black;
@@ -355,7 +357,7 @@ nav a:hover{
 }
 
 .aff_plus{
-    margin-left: -1130px;
+    margin-left: -1200px;
     padding-top: 800px;
 }
 
@@ -381,12 +383,14 @@ aside{
 
 #tit_pop i{
     margin-top: 18px;
+    margin-right: -20px;
+    margin-left: 20px;
 }
 
 #tit_pop h2{
     font-family: 'Raleway2', sans-serif;
     font-size: 1.5em;
-    margin-left: -70px;
+    margin-left: -85px;
 }
 
 aside img{
@@ -441,7 +445,7 @@ aside div{
     flex-direction: row;
     align-items: baseline;
     color: rgb(170, 177, 187);
-    margin-top: 55px;
+    margin-top: 45px;
 }
 
 aside .blue{
@@ -457,6 +461,7 @@ aside .blue{
 #activites{
     display: flex;
     margin-top: 50px;
+    width: 1830px;
 }
 
 #activites h2{
@@ -466,6 +471,7 @@ aside .blue{
 
 #activites img{
     border-radius: 20px 20px 0px 0px;
+    width: 410px;
 }
 
 #activites figcaption{
@@ -488,7 +494,6 @@ aside .blue{
 }
 
 #pomegues{
-    width: 350px;
     height: 300px;
     margin-top: -3px;
     margin-bottom: -5px;
@@ -496,23 +501,19 @@ aside .blue{
 
 #frioul{
     height: 200px;
-    width: 350px;
     margin-top: 45px;
 }
 
 #garde{
-    width: 350px;
     height: 240px;
 }
 
 #longchamp{
-    width: 350px;
     height: 245px;
     margin-top: 45px;
 }
 
 .big_a img{
-    width: 450px;
     height: 620px;
 }
 
@@ -520,12 +521,15 @@ aside .blue{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    margin-left: -10px;
 }
 
 #act_2 .small_a{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    width: 490px;
+    margin-left: -10px;
 }
 
 #act_1{
@@ -534,7 +538,8 @@ aside .blue{
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 60px;
-    margin-left: -250px;
+    margin-left: -267px;
+    margin-right: 22px;
     width: 900px;
     height: 700px;
 }
@@ -544,8 +549,10 @@ aside .blue{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 900px;
+    width: 840px;
     height: 700px;
+    margin-top: 60px;
+    margin-left: 40px;
 }
 
 /* FOOTER */
@@ -557,6 +564,7 @@ footer{
     margin-top: 30px;
     padding-top: 30px;
     padding-left: 40px;
+    width: 1850px;
 
     background-color: rgba(238, 238, 238, 0.781);
 }
