@@ -93,6 +93,9 @@ body p{
     right: -17px;
     bottom: -13px;
 }
+.mob_bouton{
+    display: none;
+}
 
 nav ul{
     list-style-type: none;
@@ -160,7 +163,7 @@ nav a:hover{
      height: 53px;
      width: 54px;
      border-radius: 100%;
-     margin-left: 135px;
+     margin-left: 133px;
      margin-top: -26px;
  }
 
@@ -181,7 +184,7 @@ nav a:hover{
     height: 53px;
     width: 54px;
     border-radius: 100%;
-    margin-left: 237px;
+    margin-left: 255px;
     margin-top: -26px;
  }
 
@@ -284,11 +287,12 @@ nav a:hover{
     background-color: rgba(238, 238, 238, 0.781);
     border-radius: 20px;
     height: 880px;
-    width: 1230px; 
+    width: 1210px; 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 45px;
+    margin-left: 20px;
 }
 
 #hebergements img{
@@ -297,6 +301,7 @@ nav a:hover{
     border-radius: 14px 14px 0px 0px;
     margin-top: -3px;
     margin-left: 8px;
+    object-fit: cover;
 }
 
 #hebergements figure{
@@ -306,7 +311,7 @@ nav a:hover{
     height: 280px;
     border-radius: 25px;
     margin-top: 120px; 
-    margin-left: 20px;
+    margin-left: 10px;
     margin-bottom: -65px;
     box-shadow: rgba(194, 194, 194, 0.753) 4px 4px 5px;
 }
@@ -357,7 +362,7 @@ nav a:hover{
 }
 
 .aff_plus{
-    margin-left: -1200px;
+    margin-left: -1150px;
     padding-top: 800px;
 }
 
@@ -367,10 +372,10 @@ aside{
     background-color: rgba(238, 238, 238, 0.781);
     border-radius: 20px;
     height: 880px;
-    width: 580px; 
+    width: 570px; 
     display: flex;
     flex-direction: column;
-    margin-left: 1300px;
+    margin-left: 1285px;
     margin-top: -880px;
 }
 
@@ -389,16 +394,18 @@ aside{
 
 #tit_pop h2{
     font-family: 'Raleway2', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.6em;
     margin-left: -85px;
+    font-weight: bold;
 }
 
 aside img{
-    width: 180px;
+    width: 220px;
     height: 170px;
     border-radius: 14px 0px 0px 14px;
     margin-top: -3px;
     margin-left: 8px;
+    object-fit: cover;
 }
 
 aside figure{
@@ -452,7 +459,6 @@ aside .blue{
     color: rgb(45, 109, 226);
     display: flex;
     align-items: baseline;
-    direction: row;
     margin-top: 15px;
 
 }
@@ -462,6 +468,8 @@ aside .blue{
     display: flex;
     margin-top: 50px;
     width: 1830px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #activites h2{
@@ -478,7 +486,7 @@ aside .blue{
     background-color: white;
     border-radius: 0px 0px 20px 20px;
     border: 1px rgb(170, 177, 187) solid;
-    padding: 15px 0px 15px 15px;
+    padding: 20px 0px 20px 20px;
     margin-top: -20px;
 
     box-shadow: rgba(194, 194, 194, 0.753) 4px 4px 4px;
@@ -497,31 +505,41 @@ aside .blue{
     height: 300px;
     margin-top: -3px;
     margin-bottom: -5px;
+    object-fit: cover;
+    object-position: center;
 }
 
 #frioul{
-    height: 200px;
+    height: 190px;
     margin-top: 45px;
+    object-fit: none;
+    object-position: bottom;
 }
 
 #garde{
     height: 240px;
+    object-fit: none;
+    object-position: top;
 }
 
 #longchamp{
     height: 245px;
     margin-top: 45px;
+    object-fit: none;
+    object-position: center;
 }
 
 .big_a img{
+    width: 410px;
     height: 620px;
+    object-fit: none;
 }
 
 #act_1 .small_a{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    margin-left: -10px;
+    margin-left: -15px;
 }
 
 #act_2 .small_a{
@@ -529,7 +547,7 @@ aside .blue{
     justify-content: space-around;
     flex-direction: column;
     width: 490px;
-    margin-left: -10px;
+    margin-left: -15px;
 }
 
 #act_1{
@@ -538,9 +556,9 @@ aside .blue{
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 60px;
-    margin-left: -267px;
-    margin-right: 22px;
-    width: 900px;
+    margin-left: -276px;
+    margin-right: 12px;
+    width: 840px;
     height: 700px;
 }
 
@@ -551,8 +569,8 @@ aside .blue{
     justify-content: space-around;
     width: 840px;
     height: 700px;
-    margin-top: 60px;
-    margin-left: 40px;
+    margin-top: 62px;
+    margin-left: 95px;
 }
 
 /* FOOTER */
@@ -570,7 +588,8 @@ footer{
 }
 
 footer div{
-    margin-right: 300px;
+    margin-right: 460px;
+    margin-left: -20px;
     display: flex;
     flex-direction: column;
 }
@@ -585,7 +604,199 @@ footer ul{
 
 footer li a{
     text-decoration: none;
-    color: rgb(113, 120, 130); 
+    color: rgb(99, 99, 99); 
     font-family: 'Raleway2', sans-serif;
     margin-left: -40px;
+}
+
+/* Version Mobile*/
+
+@media (max-width: 667px) {
+
+    #bloc_page{
+        width: 667px;
+        margin:auto;
+    }
+
+    .logo img{
+        width: 100px;
+        height: 50px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    header h1, section h1, aside h1, footer h1{
+        padding-top: 25px;
+        font-family: 'Raleway1', sans-serif;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    header h1{
+        margin-left:10px;
+        margin-top: 80px;
+    }
+
+    body p{
+        font-family: 'Raleway2', sans-serif;
+        font-weight: lighter;
+        font-size: 1.1em;
+        color: rgb(49, 49, 49);
+        
+    }
+    
+    .logo p{
+        margin-top: 3px;
+        margin-left: 10px;
+    }
+
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        position: fixed; top: 0; left: 0;
+        margin-top: 100px;
+        margin-left: -40px;
+        
+    }
+    
+    nav li a{
+        font-family: 'Raleway2', sans-serif; 
+        font-weight:lighter;
+        font-size: 1.1em;
+    
+        text-decoration: none;
+        color: rgb(113, 120, 130);
+
+        padding: 0px 45px 20px 45px;
+        border-bottom: 3px rgb(170, 177, 187) solid;
+    }
+    
+    #actact{
+        margin-left: -50px;
+        padding: 0px 50px 20px 50px;
+    }
+
+    #inscrire{
+        position: fixed; top: 0;
+        margin-left: -200px;
+        margin-top: 35px;
+        border: none;
+    }
+    
+    nav a:hover{
+        
+        color: rgb(45, 109, 226);
+        border-top: none;
+        border-bottom: 3px rgb(45, 109, 226) solid;
+        
+    }
+
+    /* Recherche */
+
+    .recherche input[type=text]{
+        width: 250px;
+        padding: 15px;
+        margin-left: 59px;
+        margin-bottom: 40px;
+        margin-top: 52px;
+        box-sizing: border-box;
+        border: 0.5px solid gainsboro;
+        font-family: 'Raleway2', sans-serif;
+        font-weight: normal;
+      }
+    
+    .position{
+        margin-top: 15px;
+        margin-left: 9px;
+        background-color: rgba(238, 238, 238, 0.781);
+        width: 50px;
+        height: 46px;
+        margin-bottom: -100px;
+        border: 0.5px solid gainsboro;
+        border-radius: 18px 0px 0px 18px;
+    }
+    
+    .position i{
+        position:relative;
+        right: -23px;
+        bottom: -15px;
+        color: black;
+    
+    }
+    
+    .bouton{
+        background-color:rgb(45, 109, 226);
+        width: 50px;
+        height: 48px;
+        margin-left: 300px;
+        margin-top: -88px;
+        border-radius: 15px 15px 15px 15px;
+        position: fixed;
+    }
+    
+    .bouton a{
+        display: none;
+    }
+
+    .mob_bouton{
+        display: block;
+        margin-left: 317px;
+        margin-top: -73px;
+        position: fixed;
+    }
+
+    .mob_bouton i{
+        color: white;
+    }
+    
+    /* Filtres*/
+
+    .filtres{
+        font-family: 'Raleway2', sans-serif;
+        font-size: large;
+        font-weight: normal;
+        
+        margin-top: -5px;
+        width: 500px;
+        height: 300px;
+
+        background-color: grey;
+    }
+
+    .filtres ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+        
+        background-color: ivory;
+
+        height: 200px;
+        width: 290px;
+    }
+
+    .filtres b{
+        position: fixed; left: 20px;
+        margin-top: -260px;
+        margin-bottom: 10px;
+    }
+
+    .filtres a{
+        color: black; 
+        margin-left: -30px;
+        margin-top: 30px;
+        
+        border: 1px rgb(170, 177, 187) solid;
+        padding: 10px 15px 10px 20px;
+        border-radius: 25px 30px 30px 25px;
+    }
+
+    .icones_filtres{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        margin-top: -30px;
+    }
+
 }
