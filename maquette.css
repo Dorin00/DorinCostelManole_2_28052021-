@@ -255,7 +255,7 @@ nav a:hover{
 }
 
 .circleinf{
-    border: 1px rgb(113, 120, 130) solid;
+    border: 1px rgba(194, 194, 194, 0.753) solid;
     border-radius: 100%;
     margin-right: 16px;
 }
@@ -718,8 +718,8 @@ footer li a{
     
     .position i{
         position:relative;
-        right: -23px;
-        bottom: -15px;
+        right: -20px;
+        bottom: -14px;
         color: black;
     
     }
@@ -757,10 +757,8 @@ footer li a{
         font-weight: normal;
         
         margin-top: -5px;
-        width: 500px;
-        height: 300px;
-
-        background-color: grey;
+        width: 360px;
+        height: 270px;
     }
 
     .filtres ul{
@@ -768,8 +766,7 @@ footer li a{
         flex-direction: row;
         flex-wrap: wrap;
         align-content: space-around;
-        
-        background-color: ivory;
+        margin-left: 35px;
 
         height: 200px;
         width: 290px;
@@ -777,18 +774,18 @@ footer li a{
 
     .filtres b{
         position: fixed; left: 20px;
-        margin-top: -260px;
+        margin-top: -235px;
         margin-bottom: 10px;
     }
 
     .filtres a{
         color: black; 
-        margin-left: -30px;
+        margin-left: -40px;
         margin-top: 30px;
         
         border: 1px rgb(170, 177, 187) solid;
-        padding: 10px 15px 10px 20px;
-        border-radius: 25px 30px 30px 25px;
+        padding: 10px 15px 10px 30px;
+        border-radius: 20px 30px 30px 20px;
     }
 
     .icones_filtres{
@@ -798,5 +795,201 @@ footer li a{
 
         margin-top: -30px;
     }
+
+    .money{
+        background-color:rgb(190, 225, 253);
+        height: 44px;
+        width: 47px;
+        border-radius: 100%;
+        margin-left: 12px;
+        margin-top: -202px;
+    }
+
+    .money i{
+        color: rgb(45, 109, 226);
+        position: relative;
+        right: -14px;
+        bottom: -13px;
+    }
+    
+    .child{
+        background-color:rgb(190, 225, 253);
+        height: 44px;
+        width: 47px;
+        border-radius: 100%;
+        margin-left: -47px;
+        margin-top: -153px;
+     }
+    
+     .child i{
+        color: rgb(45, 109, 226);
+        position: relative;
+        right: -18px;
+        bottom: -14px;
+    }
+
+    .heart{
+        background-color:rgb(190, 225, 253);
+        height: 44px;
+        width: 47px;
+        border-radius: 100%;
+        margin-left: -47px;
+        margin-top: -102px;
+     }
+    
+    .heart i{
+        color: rgb(45, 109, 226);
+        position: relative;
+        right: -16px;
+        bottom: -14px;
+    }
+
+    .dog {
+        background-color:rgb(190, 225, 253);
+        height: 44px;
+        width: 47px;
+        border-radius: 100%;
+        margin-left: -47px;
+        margin-top: -53px;
+     }
+    
+     .dog i{
+        color: rgb(45, 109, 226);
+        position: relative;
+        right: -15px;
+        bottom: -12px;
+    }
+
+    /* Heb Mobile*/
+
+    #hebergements{
+        background-color: rgba(238, 238, 238, 0.781);
+        border-radius: 20px;
+        height: 1700px;
+        width: 360px; 
+        display: flex;
+        flex-direction: column;
+        margin-top: 800px;
+        margin-left: -2px;
+        margin-bottom: 400px;
+    }
+
+
+    #heb_title{
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-bottom: -115px;
+        margin-right: -40px;
+    }
+    
+    #heb_title h1{
+        font-family: 'Raleway2', sans-serif;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    #hebergements img{
+        width: 330px;
+        height: 120px;
+        border-radius: 14px 14px 0px 0px;
+        margin-top: 1px;
+        margin-left: 5px;
+        object-fit: cover;
+    }
+    
+    #hebergements figure{
+        background-color: white;
+        border: 1px solid white;
+        width: 340px;
+        height: 210px;
+        border-radius: 20px;
+        margin-top: 120px; 
+        margin-left: 10px;
+        margin-bottom: -65px;
+        box-shadow: rgba(194, 194, 194, 0.753) 4px 4px 5px;
+    }
+    #hebergements figcaption{
+        padding-left: 15px;
+        margin-top: -10px;
+    }
+
+    #hebergements p{
+        margin-top: 4px;
+    }
+
+    .aff_plus{
+        position: fixed; left:0;
+        margin-top: 1500px;
+        width: 60%;
+        
+    }
+
+    /* Aside Mob*/
+
+    aside{
+        background-color: rgba(238, 238, 238, 0.781);
+        height: 680px;
+        border-radius: 0px;
+        width: 370px; 
+        display: flex;
+        flex-direction: column;
+        margin-left: -5px;
+        margin-top: -2850px;
+        margin-bottom: 1800px;
+    }
+
+    #tit_pop i{
+        margin-top: -15px;
+    }
+
+    #tit_pop h2{
+        font-family: 'Raleway2', sans-serif;
+        font-size: 1.4em;
+        margin-left: -55px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        margin-top: -10px;
+    }
+
+    aside figure{
+        background-color: white;
+        border: 1px solid white;
+        width: 340px;
+        height: 170px;
+        border-radius: 25px;
+        margin-left: 13px;
+        display: flex;
+        
+        margin-top: -20px;
+        box-shadow: rgba(194, 194, 194, 0.753) 4px 4px 5px;
+    }
+
+    aside img{
+        width: 150px;
+        height: 150px;
+        border-radius: 14px 0px 0px 14px;
+        margin-top: -3px;
+        margin-left: 8px;
+        object-fit: cover;
+    }
+    
+    aside p{
+        font-size: 0.8em;
+        font-weight: normal;
+        font-family: 'Raleway2', sans-serif;
+    }
+
+    .rating{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        color: rgb(170, 177, 187);
+        margin-top: 25px;
+    }
+    
+    aside strong{
+        font-size: 0.9em;
+    }
+
 
 }
