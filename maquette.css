@@ -296,7 +296,7 @@ nav a:hover{
 }
 
 #hebergements img{
-    width: 303px;
+    width: 343px;
     height: 165px;
     border-radius: 14px 14px 0px 0px;
     margin-top: -3px;
@@ -307,7 +307,7 @@ nav a:hover{
 #hebergements figure{
     background-color: white;
     border: 1px solid white;
-    width: 320px;
+    width: 360px;
     height: 280px;
     border-radius: 25px;
     margin-top: 120px; 
