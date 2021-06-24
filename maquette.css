@@ -12,11 +12,6 @@
     font-style: normal;
 }
 
-#bloc_page{
-    width: 900px;
-    margin:auto;
-}
-
 /* Header */
 
 .logo img{
@@ -612,11 +607,11 @@ footer li a{
 
 /* Version Mobile*/
 
-@media (max-width: 667px) {
-
-    #bloc_page{
-        width: 667px;
-        margin:auto;
+@media only screen and (max-width: 375px) {
+    
+    .bloc_page{
+        max-width: 375px;
+        overflow: hidden;
     }
 
     .logo img{
@@ -636,6 +631,7 @@ footer li a{
     header h1{
         margin-left:10px;
         margin-top: 80px;
+    
     }
 
     body p{
@@ -643,6 +639,7 @@ footer li a{
         font-weight: lighter;
         font-size: 1.1em;
         color: rgb(49, 49, 49);
+        
         
     }
     
@@ -654,10 +651,10 @@ footer li a{
     nav ul{
         list-style-type: none;
         display: flex;
-        position: fixed; top: 0; left: 0;
-        margin-top: 100px;
-        margin-left: -40px;
-        
+
+        position: relative; top: 0; left: 0;
+        margin-top: -285px;
+        margin-bottom: 250px;
     }
     
     nav li a{
@@ -673,24 +670,37 @@ footer li a{
     }
     
     #actact{
-        margin-left: -50px;
         padding: 0px 50px 20px 50px;
+        margin-left: 165px;
     }
 
+    #hebheb{
+        width: 80%;
+        padding: 0px 40px 20px 50px;
+        margin-left: -40px;
+    }
+
+    nav li{
+        width: 0;
+    }
+    
+    
+
     #inscrire{
-        position: fixed; top: 0;
-        margin-left: -200px;
-        margin-top: 35px;
+        position: absolute; top: 0;
+        margin-left: 190px;
+        margin-top: -60px;
         border: none;
+        width: 50px;
+        
     }
     
     nav a:hover{
-        
         color: rgb(45, 109, 226);
         border-top: none;
         border-bottom: 3px rgb(45, 109, 226) solid;
-        
     }
+
 
     /* Recherche */
 
@@ -722,6 +732,7 @@ footer li a{
         right: -20px;
         bottom: -14px;
         color: black;
+        
     
     }
     
@@ -732,7 +743,8 @@ footer li a{
         margin-left: 300px;
         margin-top: -88px;
         border-radius: 15px 15px 15px 15px;
-        position: fixed;
+        position: absolute;
+        
     }
     
     .bouton a{
@@ -743,23 +755,24 @@ footer li a{
         display: block;
         margin-left: 317px;
         margin-top: -73px;
-        position: fixed;
+        position: absolute;
     }
 
     .mob_bouton i{
         color: white;
+       
     }
     
     /* Filtres*/
 
     .filtres{
-        font-family: 'Raleway2', sans-serif;
         font-size: large;
         font-weight: normal;
         
         margin-top: -5px;
-        width: 360px;
+        width: 100%;
         height: 270px;
+        
     }
 
     .filtres ul{
@@ -767,26 +780,43 @@ footer li a{
         flex-direction: row;
         flex-wrap: wrap;
         align-content: space-around;
-        margin-left: 35px;
-
-        height: 200px;
-        width: 290px;
+        
+        height: 220px;
+        width: 100%;
+        margin: 0 auto;
+        
     }
 
     .filtres b{
-        position: fixed; left: 20px;
+        position: absolute; left: 20px;
         margin-top: -235px;
         margin-bottom: 10px;
+        
     }
 
     .filtres a{
         color: black; 
-        margin-left: -40px;
-        margin-top: 30px;
+        margin-left: -30px;
         
         border: 1px rgb(170, 177, 187) solid;
         padding: 10px 15px 10px 30px;
-        border-radius: 20px 30px 30px 20px;
+        border-radius: 5px 30px 30px 5px;
+        
+    }
+
+    .filtres li{
+        
+        height: 20%;
+        margin-top: 10px;
+        margin-left: 25px;
+        width: 30%;
+    }
+    #anima_mob{
+        width: 70%;
+    }
+    
+    #fam_mob{
+        margin-left: 95px;
     }
 
     .icones_filtres{
@@ -803,7 +833,7 @@ footer li a{
         width: 47px;
         border-radius: 100%;
         margin-left: 12px;
-        margin-top: -202px;
+        margin-top: -207px;
     }
 
     .money i{
@@ -818,8 +848,8 @@ footer li a{
         height: 44px;
         width: 47px;
         border-radius: 100%;
-        margin-left: -47px;
-        margin-top: -153px;
+        margin-left: 140px;
+        margin-top: -208px;
      }
     
      .child i{
@@ -834,8 +864,8 @@ footer li a{
         height: 44px;
         width: 47px;
         border-radius: 100%;
-        margin-left: -47px;
-        margin-top: -102px;
+        margin-left: -233px;
+        margin-top: -134px;
      }
     
     .heart i{
@@ -851,7 +881,7 @@ footer li a{
         width: 47px;
         border-radius: 100%;
         margin-left: -47px;
-        margin-top: -53px;
+        margin-top: -60px;
      }
     
      .dog i{
@@ -861,27 +891,39 @@ footer li a{
         bottom: -12px;
     }
 
+
     /* Heb Mobile*/
 
     #hebergements{
         background-color: white;
         border-radius: 20px;
         height: 1700px;
-        width: 360px; 
+        width: 100%; 
         display: flex;
         flex-direction: column;
         margin-top: 700px;
         margin-left: -2px;
         margin-bottom: 400px;
-
     }
+    
+    .panier{order: 1;}
+    .mer{order: 4;}
+    .pport{order: 2;}
+    .mou{order: 3;}
+    .panier{order: 5;}
+    .amina{order: 6;}
 
+    .pport{
+        margin-top: -800px;
+    }
+    
 
     #heb_title{
         margin-top: 100px;
         margin-left: 20px;
         margin-bottom: -115px;
         margin-right: -40px;
+        width: 90%;
     }
     
     #heb_title h1{
@@ -919,11 +961,9 @@ footer li a{
         margin-top: 4px;
     }
 
-    .aff_plus{
-        position: fixed; left:0;
-        margin-top: 1500px;
-        width: 60%;
-        
+    .aff_plus a{
+        position: relative; left: 0; top: 0;
+        margin-top: 50%;
     }
 
     /* Aside Mob*/
@@ -932,16 +972,17 @@ footer li a{
         background-color: rgba(238, 238, 238, 0.781);
         height: 680px;
         border-radius: 0px;
-        width: 370px; 
+        width: 375px; 
         display: flex;
         flex-direction: column;
-        margin-left: -5px;
+        margin-left: -8px;
         margin-top: -2800px;
         margin-bottom: 1750px;
     }
 
     #tit_pop i{
         margin-top: -15px;
+        height: 30px;
     }
 
     #tit_pop h2{
@@ -951,6 +992,7 @@ footer li a{
         font-weight: bold;
         margin-bottom: 40px;
         margin-top: -10px;
+        
     }
 
     aside figure{
@@ -959,7 +1001,7 @@ footer li a{
         width: 340px;
         height: 170px;
         border-radius: 25px;
-        margin-left: 13px;
+        margin-left: 15px;
         display: flex;
         
         margin-top: -20px;
@@ -981,6 +1023,10 @@ footer li a{
         font-family: 'Raleway2', sans-serif;
     }
 
+    .infos_pop{
+        margin-top: 17px;
+    }
+
     .rating{
         display: flex;
         flex-direction: row;
@@ -999,22 +1045,28 @@ footer li a{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 360px;
+        width: 100%;
+        
     }
 
     #activites h2{
         margin-left: 15px;
+        width: 80%;
     }
 
     #act_1{
         margin-left: -13px;
+        
     }
 
     #act_1 .big_a{
         margin-top: -85px;
         margin-left: -15px;
         margin-bottom: -70px;
+    }
 
+    .big_a img{
+        object-fit: cover;
     }
 
     #act_1 figure{
@@ -1038,10 +1090,12 @@ footer li a{
 
     #act_2{
         margin-left: -13px;
+        
     }
 
     #act_2 figure{
         width: 336px;
+        
     }
 
     #longchamp{
@@ -1055,16 +1109,893 @@ footer li a{
         flex-direction: column;
         flex-wrap: wrap;
         width: 333px;
-        height: 450px;
+        height: 420px;
+        background-color: rgba(238, 238, 238, 0.781);
 
         margin-left: -7px;
         margin-top: -40px;
     }
 
     footer div{
-        
         width: 260px;
+        align-content: space-around;
     }
-     
+
+    footer p{
+        margin-bottom: -5px;
+    }
+
+    footer li {
+        margin-top: 5px;
+    }
+
+    /* 320                                */
+
+    @media only screen and (max-width: 320px){
+
+        .bloc_page{
+            width: 320px;
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        .logo img{
+            width: 90px;
+            height: 40px;
+        }
+    
+        header h1, section h1, aside h1, footer h1{
+            font-size: 1.3em;
+        }
+    
+        header h1{
+            margin-left:10px;
+            margin-top: 80px;
+        }    
+        body p{
+            font-size: 1em;
+        }
+
+        nav ul{
+            list-style-type: none;
+            display: flex;
+    
+            position: relative; top: 0; left: 0;
+            margin-top: -260px;
+            margin-bottom: 250px;
+            margin-left: -15px;
+        }
+        
+        nav li a{
+            font-size: 0.9em;
+        }
+        
+        #actact{
+            padding: 0px 49px 20px 45px;
+            margin-left: 132px;
+        }
+    
+        #hebheb{
+            padding: 0px 40px 20px 40px;
+            margin-left: -30px;
+        }
+        
+        #inscrire{
+            margin-left: 155px;
+            margin-top: -60px;
+        }
+
+        .recherche input[type=text]{
+            width: 230px;
+          }
+        
+        .bouton{
+            margin-left: 250px;
+        }
+        
+        .bouton a{
+            display: none;
+        }
+    
+        .mob_bouton{
+            margin-left: 268px;
+        }
+
+        .filtres{
+            font-size: 0.9em;
+            font-weight: bold;
+            
+            margin-top: -5px;
+            width: 100%;
+            height: 270px;
+            margin-left: -10px;
+        }
+        
+        .filtres ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: space-around;
+            
+            height: 200px;
+            width: 320px;
+            margin: 0 auto;
+            
+        }
+    
+        .filtres b{
+            position: absolute; left: 20px;
+            margin-top: -235px;
+            margin-bottom: 10px;
+            font-size: 1em;
+            margin-left: -5px;
+            
+        }
+    
+        .filtres a{
+            color: black; 
+            margin-left: -40px;
+            margin-top: 30px;
+            
+            border: 1px rgb(170, 177, 187) solid;
+            padding: 10px 15px 10px 30px;
+            border-radius: 5px 30px 30px 5px;
+            
+            
+        }
+    
+        .filtres li{
+            height: 20%;
+            margin-top: 10px;
+            margin-left: 30px;
+            width: 20%;
+            
+        }
+
+        #fam_mob{
+            margin-left: 115px;
+            margin-top: 12px;
+        }
+
+    
+        .money{
+            height: 38px;
+            width: 43px;
+            
+            margin-left: 5px;
+            margin-top: -198px;
+        }
+    
+        .money i{    
+            right: -12px;
+            bottom: -11px;
+        }
+        
+        .child{
+            height: 38px;
+            width: 43px;
+            
+            margin-left: 120px;
+            margin-top: -196px;
+         }
+        
+         .child i{
+            right: -16px;
+            bottom: -12px;
+        }
+    
+        .heart{
+            height: 38px;
+            width: 43px;
+            
+            margin-left: -206px;
+            margin-top: -130px;
+         }
+        
+        .heart i{
+            right: -14px;
+            bottom: -12px;
+        }
+    
+        .dog {
+            height: 38px;
+            width: 43px;
+            
+            margin-left: -42px;
+            margin-top: -64px;
+         }
+        
+         .dog i{
+            right: -15px;
+            bottom: -12px;
+        }
+
+        .infos{
+            width: 310px;
+        }
+        .infos p{
+            margin-left: -15px;
+        }
+
+        #hebergements{
+            height: 1550px;
+            width: 310px; 
+            display: flex;
+            
+            margin-top: 625px;
+            margin-left: 0px;
+            margin-bottom: 400px;
+            background-color: white;
+        }
+
+        .pport{
+            margin-top: 0px;
+        }
+        
+    
+        #heb_title h1{
+            font-size: 1.1em;
+        }
+    
+        #hebergements img{
+            width: 270px;
+            height: 100px;
+            margin-top: 1px;
+            margin-left: 5px;
+           
+        }
+        
+        #hebergements figure{
+            width: 280px;
+            height: 190px;
+
+            margin-top: 120px; 
+            margin-left: 13px;
+            margin-bottom: -65px;
+        }
+        
+        #hebergements p{
+            margin-top: 4px;
+        }
+    
+        .aff_plus{
+            position: fixed; top: 0; left:0;
+            margin-top: 1500px;
+        }
+
+        aside{
+            height: 600px;
+            width: 310px; 
+
+            margin-left: 0px;
+            margin-top: -2560px;
+            margin-bottom: 1580px;
+        }
+    
+        #tit_pop h2{
+            font-size: 1.1em;
+        }
+    
+        aside figure{
+            width: 290px;
+            height: 140px;
+         
+            margin-left: 9px;
+            margin-top: -20px;
+        }
+        
+        aside figcaption{
+            margin-top: -20px;
+        }
+    
+        aside img{
+            width: 110px;
+            height: 130px;
+            border-radius: 20px 0px 0px 20px;
+            margin-top: -8px;
+            margin-left: 5px;
+        }
+        
+        aside p{
+            font-size: 0.9em;
+        }
+    
+        .rating{
+            margin-top: 20px;
+        }
+
+        #activites{
+            width: 310px;
+            height: 1400px;
+            
+            margin-left: -4px;
+        }
+    
+        #activites h2{
+            margin-left: 15px;
+        }
+
+        #act_1 {
+            margin-top: -20px;
+        }
+    
+        #act_1 .big_a{
+            margin-top: -25px;
+           
+            margin-bottom: -70px;
+            height: 200px ;
+    
+        }
+    
+        #act_1 figure{
+            width: 295px;
+            margin-bottom: 100px;
+            
+        }
+    
+        #frioul{
+            margin-top: -100px;
+        }
+    
+        #activites img{
+            width: 295px;
+            height: 120px;
+        }
+    
+        #act_2 .big_a{
+            margin-left: -15px;
+            margin-bottom: -300px;
+        }
+    
+        #act_2{
+            margin-top: -95px;
+            
+        }
+    
+        #act_2 figure{
+            width: 295px;
+        }
+    
+        #longchamp{
+            margin-top: -12px;
+        }
+
+        footer{
+            width: 275px;
+            height: 450px;
+    
+            margin-left: -7px;
+            margin-top: -150px;
+        }
+    
+        footer div{
+            width: 260px;
+        }
+    
+    }
+
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px){
+
+    .bloc_page{
+        max-width: 425px;
+        overflow: hidden;
+    }
+
+    .logo img{
+        width: 100px;
+        height: 50px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    header h1, section h1, aside h1, footer h1{
+        padding-top: 25px;
+        font-family: 'Raleway1', sans-serif;
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+
+    header h1{
+        margin-left:10px;
+        margin-top: 80px;
+    
+    }
+
+    body p{
+        font-family: 'Raleway2', sans-serif;
+        font-weight: lighter;
+        font-size: 1.2em;
+        color: rgb(49, 49, 49);
+    }
+    
+    .logo p{
+        margin-top: 3px;
+        margin-left: 10px;
+    }
+
+    nav ul{
+        list-style-type: none;
+        display: flex;
+
+        position: relative; top: 0; left: 0;
+        margin-top: -285px;
+        margin-bottom: 250px;
+    }
+    
+    nav li a{
+        font-family: 'Raleway2', sans-serif; 
+        font-weight:lighter;
+        font-size: 1.2em;
+    
+        text-decoration: none;
+        color: rgb(113, 120, 130);
+
+        padding: 0px 45px 20px 45px;
+        border-bottom: 3px rgb(170, 177, 187) solid;
+    }
+    
+    #actact{
+        padding: 0px 75px 20px 45px;
+        margin-left: 180px;
+    }
+
+    #hebheb{
+        width: 80%;
+        padding: 0px 55px 20px 40px;
+        margin-left: -40px;
+    }
+
+    nav li{
+        width: 0;
+    }
+    
+    
+
+    #inscrire{
+        position: absolute; top: 0;
+        margin-left: 210px;
+        margin-top: -60px;
+        border: none;
+        width: 50px;
+        
+    }
+    
+    nav a:hover{
+        color: rgb(45, 109, 226);
+        border-top: none;
+        border-bottom: 3px rgb(45, 109, 226) solid;
+    }
+
+
+    /* Recherche */
+
+    .recherche input[type=text]{
+        width: 290px;
+        padding: 15px;
+        margin-left: 59px;
+        margin-bottom: 40px;
+        margin-top: 52px;
+        box-sizing: border-box;
+        border: 0.5px solid gainsboro;
+        font-family: 'Raleway2', sans-serif;
+        font-weight: normal;
+      }
+    
+    .position{
+        margin-top: 15px;
+        margin-left: 9px;
+        background-color: rgba(238, 238, 238, 0.781);
+        width: 50px;
+        height: 46px;
+        margin-bottom: -100px;
+        border: 0.5px solid gainsboro;
+        border-radius: 18px 0px 0px 18px;
+    }
+    
+    .position i{
+        position:relative;
+        right: -20px;
+        bottom: -14px;
+        color: black;
+        
+    
+    }
+    
+    .bouton{
+        background-color:rgb(45, 109, 226);
+        width: 50px;
+        height: 48px;
+        margin-left: 340px;
+        margin-top: -88px;
+        border-radius: 15px 15px 15px 15px;
+        position: absolute;
+        
+    }
+    
+    .bouton a{
+        display: none;
+    }
+
+    .mob_bouton{
+        display: block;
+        margin-left: 357px;
+        margin-top: -73px;
+        position: absolute;
+    }
+
+    .mob_bouton i{
+        color: white;
+       
+    }
+    
+    /* Filtres*/
+
+    .filtres{
+        font-size: large;
+        font-weight: normal;
+        
+        margin-top: -5px;
+        width: 100%;
+        height: 270px;
+        
+    }
+
+    .filtres ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+        
+        height: 220px;
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+
+    .filtres b{
+        position: absolute; left: 20px;
+        margin-top: -235px;
+        margin-bottom: 10px;
+        
+    }
+
+    .filtres a{
+        color: black; 
+        margin-left: -30px;
+        
+        border: 1px rgb(170, 177, 187) solid;
+        padding: 10px 15px 10px 30px;
+        border-radius: 5px 30px 30px 5px;
+        
+    }
+
+    .filtres li{
+        
+        height: 20%;
+        margin-top: 10px;
+        margin-left: 25px;
+        width: 30%;
+    }
+    #anima_mob{
+        width: 70%;
+    }
+    
+    #fam_mob{
+        margin-left: 100px;
+    }
+
+    .icones_filtres{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        margin-top: -30px;
+    }
+
+    .money{
+        background-color:rgb(190, 225, 253);
+        height: 44px;
+        width: 47px;
+        border-radius: 100%;
+        margin-left: 12px;
+        margin-top: -207px;
+    }
+
+    .money i{
+        color: rgb(45, 109, 226);
+        position: relative;
+        right: -14px;
+        bottom: -13px;
+    }
+    
+    .child{
+        background-color:rgb(190, 225, 253);
+        height: 44px;
+        width: 47px;
+        border-radius: 100%;
+        margin-left: 160px;
+        margin-top: -208px;
+     }
+    
+     .child i{
+        color: rgb(45, 109, 226);
+        position: relative;
+        right: -18px;
+        bottom: -14px;
+    }
+
+    .heart{
+        background-color:rgb(190, 225, 253);
+        height: 44px;
+        width: 47px;
+        border-radius: 100%;
+        margin-left: -253px;
+        margin-top: -134px;
+     }
+    
+    .heart i{
+        color: rgb(45, 109, 226);
+        position: relative;
+        right: -16px;
+        bottom: -14px;
+    }
+
+    .dog {
+        background-color:rgb(190, 225, 253);
+        height: 44px;
+        width: 47px;
+        border-radius: 100%;
+        margin-left: -47px;
+        margin-top: -60px;
+     }
+    
+     .dog i{
+        color: rgb(45, 109, 226);
+        position: relative;
+        right: -15px;
+        bottom: -12px;
+    }
+
+
+    /* Heb Mobile*/
+
+    #hebergements{
+        background-color: white;
+        border-radius: 20px;
+        height: 1700px;
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        margin-top: 700px;
+        margin-left: -2px;
+        margin-bottom: 400px;
+    }
+    
+    .panier{order: 1;}
+    .mer{order: 4;}
+    .pport{order: 2;}
+    .mou{order: 3;}
+    .panier{order: 5;}
+    .amina{order: 6;}
+
+    .pport{
+        margin-top: -800px;
+    }
+    
+
+    #heb_title{
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-bottom: -115px;
+        margin-right: -40px;
+        width: 90%;
+    }
+    
+    #heb_title h1{
+        font-family: 'Raleway2', sans-serif;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    #hebergements img{
+        width: 360px;
+        height: 120px;
+        border-radius: 14px 14px 0px 0px;
+        margin-top: 3px;
+        margin-left: 5px;
+        object-fit: cover;
+    }
+    
+    #hebergements figure{
+        background-color: white;
+        border: 1px solid white;
+        width: 370px;
+        height: 210px;
+        border-radius: 20px;
+        margin-top: 120px; 
+        margin-left: 18px;
+        margin-bottom: -65px;
+        box-shadow: rgba(194, 194, 194, 0.753) 4px 4px 5px;
+    }
+    #hebergements figcaption{
+        padding-left: 15px;
+        margin-top: -10px;
+    }
+
+    #hebergements p{
+        margin-top: 4px;
+    }
+
+    .aff_plus a{
+        position: relative; left: 0; top: 0;
+        margin-top: 50%;
+    }
+
+    /* Aside Mob*/
+
+    aside{
+        background-color: rgba(238, 238, 238, 0.781);
+        height: 680px;
+        border-radius: 0px;
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: -2800px;
+        margin-bottom: 1750px;
+    }
+
+    #tit_pop i{
+        margin-top: -15px;
+        height: 30px;
+    }
+
+    #tit_pop h2{
+        font-family: 'Raleway2', sans-serif;
+        font-size: 1.4em;
+        margin-left: -65px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        margin-top: -10px;
+        
+    }
+
+    aside figure{
+        background-color: white;
+        border: 1px solid white;
+        width: 375px;
+        height: 170px;
+        border-radius: 25px;
+        margin-left: 15px;
+        display: flex;
+        
+        margin-top: -20px;
+        box-shadow: rgba(194, 194, 194, 0.753) 4px 4px 5px;
+    }
+
+    aside img{
+        width: 150px;
+        height: 150px;
+        border-radius: 14px 0px 0px 14px;
+        margin-top: -3px;
+        margin-left: 8px;
+        object-fit: cover;
+    }
+    
+    aside p{
+        font-size: 0.8em;
+        font-weight: normal;
+        font-family: 'Raleway2', sans-serif;
+    }
+
+    .infos_pop{
+        margin-top: 17px;
+    }
+
+    .rating{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        color: rgb(170, 177, 187);
+        margin-top: 25px;
+    }
+    
+    aside strong{
+        font-size: 0.9em;
+    }
+
+    /* Activites Mobile */ 
+
+    #activites{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+
+    #activites h2{
+        margin-left: 15px;
+        width: 80%;
+    }
+
+    #act_1{
+        margin-left: -13px;
+        
+    }
+
+    #act_1 .big_a{
+        margin-top: -85px;
+        margin-left: -15px;
+        margin-bottom: -70px;
+    }
+
+    .big_a img{
+        object-fit: cover;
+    }
+
+    #act_1 figure{
+        width: 384px;
+    }
+
+    #frioul{
+        margin-top: -1px;
+    }
+
+    #activites img{
+        width: 384px;
+        height: 150px;
+        margin-bottom: -3px;
+    }
+
+    #act_2 .big_a{
+        margin-top: -180px;
+        margin-left: -15px;
+        margin-bottom: -165px;
+    }
+
+    #act_2{
+        margin-left: -13px;
+        
+    }
+
+    #act_2 figure{
+        width: 384px;
+        
+    }
+
+    #longchamp{
+        margin-top: 2px;
+    }
+
+    /* Footer Mob */
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 420px;
+        background-color: rgba(238, 238, 238, 0.781);
+
+        margin-left: -7px;
+        margin-top: -40px;
+    }
+
+    footer div{
+        width: 260px;
+        align-content: space-around;
+    }
+
+    footer p{
+        margin-bottom: -5px;
+        font-size: 1.3em;
+    }
+
+    footer li {
+        margin-top: 5px;
+    }
 
 }
