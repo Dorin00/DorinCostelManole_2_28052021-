@@ -1,10 +1,11 @@
-@font-face {
+@font-face{
     font-family: 'Raleway1';
     src: url('fontz/static/Raleway-ExtraBold.ttf') format('ttf'),
          url('fontz/static/Raleway-Bold.ttf') format('ttf');
    font-weight: normal;
    font-style: normal;
 }
+
 @font-face {
     font-family: 'Raleway2';
     src: url('fontz/static/Raleway-Bold.ttf') format('ttf');
@@ -266,13 +267,12 @@ nav a:hover{
 
 
 #heb_title{
-    
     margin-left: 20px;
-    margin-bottom: -102px;
+    margin-bottom: -75px;
     margin-right: -40px;
 }
 
-#heb_title h1{
+#heb_title h2{
     font-family: 'Raleway2', sans-serif;
     font-weight: bold;
     font-size: 2em;
@@ -605,6 +605,136 @@ footer li a{
     margin-left: -40px;
 }
 
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+
+    .filtres{
+        font-family: 'Raleway2', sans-serif;
+        font-size: large;
+        font-weight: normal;
+        
+        display: flex;
+        align-items: center;
+   
+        margin-top: 27px;
+        width: 1500px;
+    }
+   
+    .filtres ul{
+        list-style-type: none;
+        display: flex;
+        margin-right: 40px;
+    }
+   
+    .filtres a{
+        text-decoration: none;
+        margin-right: 60px;
+        margin-left: 40px;
+   
+        color: black; 
+   
+        border: 1px rgb(170, 177, 187) solid;
+        padding: 15px 35px 15px 75px;
+        border-radius: 25px 30px 30px 25px;
+   }
+   
+    .icones_filtres{
+        display: flex;
+        margin-top: -30px;
+    }
+
+    .money{
+        background-color:rgb(190, 225, 253);
+        height: 53px;
+        width: 130%;
+        border-radius: 100%;
+        
+        margin-top: -26px;
+    }
+   
+    .money i{
+        color: rgb(45, 109, 226);
+        position: relative;
+        right: -17px;
+        bottom: -16px;
+    }
+   
+    .child{
+       background-color:rgb(190, 225, 253);
+       height: 53px;
+       width: 130%;
+       border-radius: 100%;
+       
+       margin-top: -26px;
+    }
+   
+    .child i{
+       color: rgb(45, 109, 226);
+       position: relative;
+       right: -21px;
+       bottom: -16px;
+   }
+   
+   .heart{
+       background-color:rgb(190, 225, 253);
+       height: 53px;
+       width: 130%;
+       border-radius: 100%;
+       margin-right: -40px;
+       margin-top: -26px;
+    }
+   
+   .heart i{
+       color: rgb(45, 109, 226);
+       position: relative;
+       right: -19px;
+       bottom: -17px;
+   }
+   
+   .dog {
+       background-color:rgb(190, 225, 253);
+       height: 53px;
+       width: 130%;
+       border-radius: 100%;
+       margin-right: -30px;
+       margin-top: -26px;
+    }
+   
+    .dog i{
+       color: rgb(45, 109, 226);
+       position: relative;
+       right: -18px;
+       bottom: -15px;
+   }
+
+   #anima_mob{
+       
+       width: 80%;
+       margin-left: -20px;
+   }
+
+   #activites{
+    display: flex;
+    margin-top: 50px;
+    width: 1830px;
+    margin-left: 25px;
+    margin-right: auto;
+    }
+    
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+
+    #activites{
+        display: flex;
+        margin-top: 50px;
+        width: 1830px;
+        margin-left: 25px;
+        margin-right: auto;
+        }
+
+}
+
+
 /* Version Mobile*/
 
 @media only screen and (max-width: 375px) {
@@ -612,6 +742,7 @@ footer li a{
     .bloc_page{
         max-width: 375px;
         overflow: hidden;
+        z-index: -1;
     }
 
     .logo img{
@@ -961,10 +1092,7 @@ footer li a{
         margin-top: 4px;
     }
 
-    .aff_plus a{
-        position: relative; left: 0; top: 0;
-        margin-top: 50%;
-    }
+    
 
     /* Aside Mob*/
 
@@ -1306,8 +1434,8 @@ footer li a{
          }
         
          .dog i{
-            right: -15px;
-            bottom: -12px;
+            right: -14px;
+            bottom: -10px;
         }
 
         .infos{
@@ -1385,7 +1513,7 @@ footer li a{
         }
         
         aside figcaption{
-            margin-top: -20px;
+            margin-top: -5px;
         }
     
         aside img{
@@ -1435,6 +1563,16 @@ footer li a{
     
         #frioul{
             margin-top: -100px;
+            object-fit: cover;
+            object-position: bottom;
+        }
+
+        #garde {
+            object-fit: cover;
+        }
+
+        #longchamp{
+            object-fit: cover;
         }
     
         #activites img{
@@ -1470,6 +1608,10 @@ footer li a{
     
         footer div{
             width: 260px;
+        }
+
+        footer p{
+            font-weight: bold;
         }
     
     }
@@ -1998,4 +2140,540 @@ footer li a{
         margin-top: 5px;
     }
 
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 426px) and (max-width: 768px){
+
+    .bloc_page{
+        max-width: 768px;
+        overflow: hidden;
+       
+    }
+
+    .logo img{
+        width: 140px;
+        height: 70px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    header h1, section h1, aside h1, footer h1{
+        padding-top: 25px;
+        font-family: 'Raleway1', sans-serif;
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+
+    header h1{
+        margin-left:10px;
+        margin-top: 80px;
+    
+    }
+
+    body p{
+        font-family: 'Raleway2', sans-serif;
+        font-weight: lighter;
+        font-size: 1.2em;
+        color: rgb(49, 49, 49);
+    }
+    
+    .logo p{
+        margin-top: 3px;
+        margin-left: 10px;
+        
+    }
+
+    nav ul{
+        list-style-type: none;
+        display: flex;
+
+        position: relative; top: 0;
+        margin-top: -285px;
+        margin-bottom: 250px;
+        margin-left: 160px;
+    
+    }
+    
+    nav li a{
+        font-family: 'Raleway2', sans-serif; 
+        font-weight:lighter;
+        font-size: 1.2em;
+    
+        text-decoration: none;
+        color: rgb(113, 120, 130);
+
+        padding: 0px 45px 20px 45px;
+        border-bottom: 3px rgb(170, 177, 187) solid;
+    }
+    
+    #actact{
+        padding: 0px 240px 20px 45px;
+        margin-left: 190px;
+    }
+
+    #hebheb{
+        width: 80%;
+        padding: 0px 45px 20px 200px;
+        margin-left: -195px;
+    }
+
+    nav li{
+        width: 0;
+    }
+    
+    
+
+    #inscrire{
+        position: absolute; top: 0;
+        margin-left: 340px;
+        margin-top: -50px;
+        border: none;
+        width: 50px;
+        
+    }
+    
+    nav a:hover{
+        color: rgb(45, 109, 226);
+        border-top: none;
+        border-bottom: 3px rgb(45, 109, 226) solid;
+    }
+
+
+    /* Recherche */
+
+    .recherche input[type=text]{
+        width: 290px;
+        padding: 15px;
+        margin-left: 220px;
+        margin-bottom: 40px;
+        margin-top: 52px;
+        box-sizing: border-box;
+        border: 0.5px solid gainsboro;
+        font-family: 'Raleway2', sans-serif;
+        font-weight: normal;
+      }
+    
+    .position{
+        margin-top: 15px;
+        margin-left: 168px;
+        background-color: rgba(238, 238, 238, 0.781);
+        width: 50px;
+        height: 46px;
+        margin-bottom: -100px;
+        border: 0.5px solid gainsboro;
+        border-radius: 18px 0px 0px 18px;
+    }
+    
+    .position i{
+        position:relative;
+        right: -20px;
+        bottom: -14px;
+        color: black;
+        
+    
+    }
+    
+    .bouton{
+        background-color:rgb(45, 109, 226);
+        width: 50px;
+        height: 48px;
+        margin-left: 500px;
+        margin-top: -88px;
+        border-radius: 15px 15px 15px 15px;
+        position: absolute;
+        
+    }
+    
+    .bouton a{
+        display: none;
+    }
+
+    .mob_bouton{
+        display: block;
+        margin-left: 518px;
+        margin-top: -73px;
+        position: absolute;
+    }
+
+    .mob_bouton i{
+        color: white;
+       
+    }
+    
+    /* Filtres*/
+
+    .filtres{
+        font-size: large;
+        font-weight: normal;
+        
+        margin-top: -5px;
+        width: 100%;
+        height: 270px;
+        
+    }
+
+    .filtres ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+        
+        height: 220px;
+        width: 100%;
+        margin: 0 auto;
+        
+        
+    }
+
+    .filtres b{
+        position: absolute; left: 20px;
+        margin-top: -235px;
+        margin-bottom: 10px;
+        
+    }
+
+    .filtres a{
+        color: black; 
+        margin-left: -30px;
+        
+        border: 1px rgb(170, 177, 187) solid;
+        padding: 10px 15px 10px 30px;
+        border-radius: 5px 30px 30px 5px;
+        
+    }
+
+    .filtres li{
+        
+        height: 20%;
+        margin-top: 10px;
+        margin-left: 25px;
+        width: 30%;
+        
+    }
+    #anima_mob{
+        width: 35%;
+        margin-left: 100px;
+    }
+    
+    #fam_mob{
+        margin-left: 100px;
+    }
+
+    .icones_filtres{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        margin-top: -30px;
+    }
+
+    .money{
+        background-color:rgb(190, 225, 253);
+        height: 44px;
+        width: 47px;
+        border-radius: 100%;
+        margin-left: 12px;
+        margin-top: -188px;
+    }
+
+    .money i{
+        color: rgb(45, 109, 226);
+        position: relative;
+        right: -14px;
+        bottom: -13px;
+    }
+    
+    .child{
+        background-color:rgb(190, 225, 253);
+        height: 44px;
+        width: 47px;
+        border-radius: 100%;
+        margin-left: 265px;
+        margin-top: -188px;
+     }
+    
+     .child i{
+        color: rgb(45, 109, 226);
+        position: relative;
+        right: -18px;
+        bottom: -14px;
+    }
+
+    .heart{
+        background-color:rgb(190, 225, 253);
+        height: 44px;
+        width: 47px;
+        border-radius: 100%;
+        margin-left: -360px;
+        margin-top: -78px;
+     }
+    
+    .heart i{
+        color: rgb(45, 109, 226);
+        position: relative;
+        right: -16px;
+        bottom: -14px;
+    }
+
+    .dog {
+        background-color:rgb(190, 225, 253);
+        height: 44px;
+        width: 47px;
+        border-radius: 100%;
+        margin-left: 265px;
+        margin-top: -78px;
+     }
+    
+     .dog i{
+        color: rgb(45, 109, 226);
+        position: relative;
+        right: -15px;
+        bottom: -12px;
+    }
+
+
+    /* Heb Mobile*/
+
+    #hebergements{
+        border-radius: 20px;
+        height: 1000px;
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        
+        margin-top: 700px;
+        margin-left: -2px;
+        margin-bottom: 400px;
+    }
+    
+    .panier{order: 1;}
+    .mer{order: 4;}
+    .pport{order: 2;}
+    .mou{order: 3;}
+    .panier{order: 5;}
+    .amina{order: 6;}
+
+    .pport{
+        margin-top: -935px;
+        margin-left: 360px;
+    }
+
+    .mou{
+        margin-top: -135px;
+       
+    }
+
+    .panier{
+        margin-top: -135px;
+    }
+
+    .mer{
+        margin-left: 360px;
+        margin-top: -135px;
+    }
+
+    .amina{
+        margin-left: 360px;
+        margin-top: -135px;
+    }
+    
+
+    #heb_title{
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-bottom: -115px;
+        margin-right: -40px;
+        width: 90%;
+    }
+    
+    #heb_title h2{
+        font-family: 'Raleway2', sans-serif;
+        font-weight: bold;
+        font-size: 1.8em;
+        margin-left: 380px;
+        margin-bottom: -70px;
+    }
+
+    #hebergements img{
+        width: 340px;
+        height: 120px;
+        border-radius: 14px 14px 0px 0px;
+        margin-top: 3px;
+        margin-left: 5px;
+        object-fit: cover;
+    }
+    
+    #hebergements figure{
+        background-color: white;
+        border: 1px solid rgb(255, 255, 255);
+        width: 350px;
+        height: 210px;
+        border-radius: 20px;
+        margin-top: 120px; 
+        margin-left: 18px;
+        margin-bottom: -65px;
+        box-shadow: rgba(194, 194, 194, 0.753) 4px 4px 5px;
+    }
+    #hebergements figcaption{
+        padding-left: 15px;
+        margin-top: -10px;
+    }
+
+    #hebergements p{
+        margin-top: 4px;
+    }
+
+    .aff_plus a{
+        position: relative; left: 0; top: 0;
+        margin-top: 50%;
+    }
+
+    /* Aside Mob*/
+
+    aside{
+        background-color: rgba(238, 238, 238, 0.781);
+        height: 680px;
+        border-radius: 0px;
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: -2100px;
+        margin-bottom: 1000px;
+    }
+
+    #tit_pop i{
+        margin-top: -15px;
+        height: 30px;
+    }
+
+    #tit_pop h2{
+        font-family: 'Raleway2', sans-serif;
+        font-size: 1.4em;
+        margin-left: -65px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        margin-top: -10px;
+        
+    }
+
+    aside figure{
+        background-color: white;
+        border: 1px solid rgb(255, 255, 255);
+        width: 490px;
+        height: 170px;
+        border-radius: 25px;
+        margin-left: 135px;
+        display: flex;
+        
+        margin-top: -20px;
+        box-shadow: rgba(194, 194, 194, 0.753) 4px 4px 5px;
+    }
+
+    aside img{
+        width: 220px;
+        height: 150px;
+        border-radius: 14px 0px 0px 14px;
+        margin-top: -3px;
+        margin-left: 8px;
+        object-fit: cover;
+    }
+    
+    aside p{
+        font-size: 0.8em;
+        font-weight: normal;
+        font-family: 'Raleway2', sans-serif;
+    }
+
+    .infos_pop{
+        margin-top: 17px;
+    }
+
+    .rating{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        color: rgb(170, 177, 187);
+        margin-top: 25px;
+    }
+    
+    aside strong{
+        font-size: 0.9em;
+    }
+
+    /* Activites Mobile */ 
+
+    #activites{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 70%;    
+    }
+
+    #activites h2{
+        margin-left: 15px;
+        width: 80%;
+    }
+
+    #act_1{
+        margin-left: -13px;
+        
+    }
+
+    #act_1 .big_a{
+        margin-top: -85px;
+        margin-left: -15px;
+        margin-bottom: -70px;
+    }
+
+    .big_a img{
+        object-fit: cover;
+    }
+
+    #act_1 figure{
+        width: 500px;
+    }
+
+    #frioul{
+        margin-top: -1px;
+    }
+
+    #activites img{
+        width: 500px;
+        height: 150px;
+        margin-bottom: -3px;
+    }
+
+    #act_2 .big_a{
+        margin-top: -180px;
+        margin-left: -15px;
+        margin-bottom: -165px;
+    }
+
+    #act_2{
+        margin-left: -13px;
+        
+    }
+
+    #act_2 figure{
+        width: 500px;
+        
+    }
+
+    #longchamp{
+        margin-top: 2px;
+    }
+
+    #pomegues{
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* Footer Mob */
+
+    footer div{
+        margin-right: 110px;
+    }
 }
