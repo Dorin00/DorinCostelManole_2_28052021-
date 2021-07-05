@@ -358,7 +358,7 @@ nav a:hover{
 }
 
 .aff_plus{
-    margin-left: -1150px;
+    margin-left: -1210px;
     padding-top: 800px;
 }
 
@@ -770,8 +770,6 @@ footer li a{
         font-weight: lighter;
         font-size: 1.1em;
         color: rgb(49, 49, 49);
-        
-        
     }
     
     .logo p{
@@ -1083,6 +1081,7 @@ footer li a{
         margin-bottom: -65px;
         box-shadow: rgba(194, 194, 194, 0.753) 4px 4px 5px;
     }
+
     #hebergements figcaption{
         padding-left: 15px;
         margin-top: -10px;
@@ -2626,6 +2625,9 @@ footer li a{
         margin-top: -85px;
         margin-left: -15px;
         margin-bottom: -70px;
+
+        object-position: 60% 40%;
+
     }
 
     .big_a img{
@@ -2668,7 +2670,7 @@ footer li a{
 
     #pomegues{
         object-fit: cover;
-        object-position: center;
+        object-position: 40% 60%;
     }
 
     /* Footer Mob */
