@@ -737,7 +737,562 @@ footer li a{
 
 /* Version Mobile*/
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 320px){
+
+    .bloc_page{
+        width: 310px;
+        overflow: hidden;
+        
+        margin-right: 0px;
+    }
+
+    .logo img{
+        width: 90px;
+        height: 40px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    header h1, section h1, aside h1, footer h1{
+        padding-top: 25px;
+        font-family: 'Raleway1', sans-serif;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    header h1{
+        margin-left:10px;
+        margin-top: 80px;
+    
+    }
+
+    body p{
+        font-family: 'Raleway2', sans-serif;
+        font-weight: lighter;
+        font-size: 1em;
+        color: rgb(49, 49, 49);
+    }
+    
+    .logo p{
+        margin-top: 3px;
+        margin-left: 10px;
+    }
+
+    nav ul{
+        list-style-type: none;
+        display: flex;
+
+        position: relative; top: 0; left: 0;
+        margin-top: -260px;
+        margin-bottom: 250px;
+        margin-left: -15px;
+    }
+    
+    nav li a{
+        font-family: 'Raleway2', sans-serif; 
+        font-weight:lighter;
+        font-size: 0.9em;
+    
+        text-decoration: none;
+        color: rgb(113, 120, 130);
+
+        padding: 0px 45px 20px 45px;
+        border-bottom: 3px rgb(170, 177, 187) solid;
+    }
+    
+    #actact{
+        padding: 0px 49px 20px 45px;
+        margin-left: 132px;
+    }
+
+    #hebheb{
+        width: 80%;
+        padding: 0px 40px 20px 40px;
+        margin-left: -30px;
+    }
+
+    nav li{
+        width: 0;
+    }
+    
+    #inscrire{
+        position: absolute; top: 0;
+        margin-left: 155px;
+        margin-top: -60px;
+        border: none;
+        width: 50px;
+        
+    }
+    
+    nav a:hover{
+        color: rgb(45, 109, 226);
+        border-top: none;
+        border-bottom: 3px rgb(45, 109, 226) solid;
+    }
+
+
+    /* Recherche */
+
+    .recherche input[type=text]{
+        width: 230px;
+        padding: 15px;
+        margin-left: 59px;
+        margin-bottom: 40px;
+        margin-top: 52px;
+        box-sizing: border-box;
+        border: 0.5px solid gainsboro;
+        font-family: 'Raleway2', sans-serif;
+        font-weight: normal;
+      }
+    
+    .position{
+        margin-top: 15px;
+        margin-left: 9px;
+        background-color: rgba(238, 238, 238, 0.781);
+        width: 50px;
+        height: 46px;
+        margin-bottom: -100px;
+        border: 0.5px solid gainsboro;
+        border-radius: 18px 0px 0px 18px;
+    }
+    
+    .position i{
+        position:relative;
+        right: -20px;
+        bottom: -14px;
+        color: black;
+        
+    
+    }
+    
+    .bouton{
+        background-color:rgb(45, 109, 226);
+        width: 50px;
+        height: 48px;
+        margin-left: 250px;
+        margin-top: -88px;
+        border-radius: 15px 15px 15px 15px;
+        position: absolute;
+        
+    }
+    
+    .bouton a{
+        display: none;
+    }
+
+    .mob_bouton{
+        display: block;
+        margin-left: 268px;
+        margin-top: -73px;
+        position: absolute;
+    }
+
+    .mob_bouton i{
+        color: white;
+       
+    }
+    
+    /* Filtres*/
+
+    .filtres{
+        font-size: 0.9em;
+        font-weight: bold;
+        
+        margin-top: -5px;
+        width: 100%;
+        height: 270px;
+        margin-left: -10px;
+        
+    }
+
+    .filtres ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+        
+        height: 200px;
+        width: 320px;
+        margin: 0 auto;
+        
+    }
+
+    .filtres b{
+        position: absolute; left: 20px;
+        margin-top: -235px;
+        margin-bottom: 10px;
+        font-size: 1em;
+        margin-left: -5px;
+        
+    }
+
+    .filtres a{
+        color: black; 
+        margin-left: -40px;
+        margin-top: 30px;
+
+        border: 1px rgb(170, 177, 187) solid;
+        padding: 10px 15px 10px 30px;
+        border-radius: 5px 30px 30px 5px;
+        
+    }
+
+    .filtres li{
+        
+        height: 20%;
+        margin-top: 10px;
+        margin-left: 30px;
+        width: 20%;
+    }
+    #anima_mob{
+        width: 75%;
+        
+    }
+    
+    #fam_mob{
+        margin-left: 115px;
+        margin-top: 12px;
+    }
+
+    .icones_filtres{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        margin-top: -30px;
+    }
+
+    .money{
+        background-color:rgb(190, 225, 253);
+        height: 38px;
+        width: 43px;
+        border-radius: 100%;
+        margin-left: 5px;
+        margin-top: -198px;
+    }
+
+    .money i{
+        color: rgb(45, 109, 226);
+        position: relative;
+        right: -12px;
+        bottom: -11px;
+    }
+    
+    .child{
+        background-color:rgb(190, 225, 253);
+        height: 38px;
+        width: 43px;
+        border-radius: 100%;
+        margin-left: 120px;
+        margin-top: -196px;
+     }
+    
+     .child i{
+        color: rgb(45, 109, 226);
+        position: relative;
+        right: -16px;
+        bottom: -12px;
+    }
+
+    .heart{
+        background-color:rgb(190, 225, 253);
+        height: 38px;
+        width: 43px;
+        border-radius: 100%;
+        margin-left: -206px;
+        margin-top: -130px;
+     }
+    
+    .heart i{
+        color: rgb(45, 109, 226);
+        position: relative;
+        right: -14px;
+        bottom: -12px;
+    }
+
+    .dog {
+        background-color:rgb(190, 225, 253);
+        height: 38px;
+        width: 43px;
+        border-radius: 100%;
+        margin-left: -42px;
+        margin-top: -64px;
+     }
+    
+     .dog i{
+        color: rgb(45, 109, 226);
+        position: relative;
+        right: -14px;
+        bottom: -10px;
+    }
+
+    .infos{
+        width: 310px;
+    }
+    .infos p{
+        margin-left: -15px;
+    }
+
+
+    /* Heb Mobile*/
+
+    #hebergements{
+        background-color: white;
+        border-radius: 20px;
+        height: 1550px;
+        width: 310px; 
+        display: flex;
+        flex-direction: column;
+        margin-top: 625px;
+        margin-left: 0px;
+        margin-bottom: 400px;
+    }
+    
+    .panier{order: 1;}
+    .mer{order: 4;}
+    .pport{order: 2;}
+    .mou{order: 3;}
+    .panier{order: 5;}
+    .amina{order: 6;}
+
+    .pport{
+        margin-top: -800px;
+    }
+    
+
+    #heb_title{
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-bottom: -115px;
+        margin-right: -40px;
+        width: 90%;
+    }
+    
+    #heb_title h1{
+        font-family: 'Raleway2', sans-serif;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+
+    #hebergements img{
+        width: 270px;
+        height: 100px;
+        border-radius: 14px 14px 0px 0px;
+        margin-top: 1px;
+        margin-left: 5px;
+        object-fit: cover;
+    }
+    
+    #hebergements figure{
+        background-color: white;
+        border: 1px solid white;
+        width: 280px;
+        height: 190px;
+        border-radius: 20px;
+        margin-top: 120px; 
+        margin-left: 13px;
+        margin-bottom: -65px;
+        box-shadow: rgba(194, 194, 194, 0.753) 4px 4px 5px;
+    }
+
+    #hebergements figcaption{
+        padding-left: 15px;
+        margin-top: -10px;
+    }
+
+    #hebergements p{
+        margin-top: 4px;
+    }
+
+    
+
+    /* Aside Mob*/
+
+    aside{
+        background-color: rgba(238, 238, 238, 0.781);
+        height: 600px;
+        border-radius: 0px;
+        width: 310px; 
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: -2560px;
+        margin-bottom: 1580px;
+    }
+
+    #tit_pop i{
+        margin-top: -15px;
+        height: 30px;
+    }
+
+    #tit_pop h2{
+        font-family: 'Raleway2', sans-serif;
+        font-size: 1.1em;
+        margin-left: -55px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        margin-top: -10px;
+        
+    }
+
+    aside figure{
+        background-color: white;
+        border: 1px solid white;
+        width: 290px;
+        height: 140px;
+        border-radius: 25px;
+        margin-left: 9px;
+        margin-top: -20px;
+        display: flex;
+        
+        box-shadow: rgba(194, 194, 194, 0.753) 4px 4px 5px;
+    }
+    
+    aside figcaption{
+        margin-top: -5px;
+    }
+
+    aside img{
+        width: 110px;
+        height: 130px;
+        border-radius: 20px 0px 0px 20px;
+        margin-top: -8px;
+        margin-left: 5px;
+        object-fit: cover;
+    }
+    
+    aside p{
+        font-size: 0.9em;
+        font-weight: normal;
+        font-family: 'Raleway2', sans-serif;
+    }
+
+    .infos_pop{
+        margin-top: 17px;
+    }
+
+    .rating{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        color: rgb(170, 177, 187);
+        margin-top: 20px;
+    }
+    
+    aside strong{
+        font-size: 0.9em;
+    }
+
+    /* Activites Mobile */ 
+
+    #activites{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 310px;
+        height: 1400px;
+
+        margin-left: -4px;
+        
+    }
+
+    #activites h2{
+        margin-left: 15px;
+        width: 80%;
+    }
+
+    #act_1{
+        margin-left: -15px;
+        margin-top: -20px;
+        
+    }
+
+    #act_1 .big_a{
+        margin-top: -25px;
+        margin-left: -15px;
+        margin-bottom: -70px;
+        height: 200px;
+    }
+
+    #act_1 figure{
+        width: 295px;
+        margin-bottom: 100px;
+        
+    }
+
+    .big_a img{
+        object-fit: cover;
+    }
+
+    #frioul{
+        margin-top: -100px;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    #garde{
+        object-fit: cover;
+    }
+
+    #activites img{
+        width: 295px;
+        height: 120px;
+    }
+
+    #act_2 .big_a{
+        margin-top: -180px;
+        margin-left: -15px;
+        margin-bottom: -300px;
+    }
+
+    #act_2{
+        margin-left: -15px;
+        margin-top: -95px;
+        
+    }
+
+    #act_2 figure{
+        width: 295px;
+        
+    }
+
+    #longchamp{
+        margin-top: -12px;
+        object-fit: cover;
+    }
+
+    /* Footer Mob */
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 275px;
+        height: 450px;
+        background-color: rgba(238, 238, 238, 0.781);
+
+        margin-left: -7px;
+        margin-top: -150px;
+    }
+
+    footer div{
+        width: 260px;
+        align-content: space-around;
+    }
+
+    footer p{
+        margin-bottom: -5px;
+        font-weight: bold;
+    }
+
+    footer li {
+        margin-top: 5px;
+    }
+
+
+}
+
+@media only screen and (min-width:321px) and (max-width: 375px) {
     
     .bloc_page{
         max-width: 375px;
@@ -1255,369 +1810,9 @@ footer li a{
     footer li {
         margin-top: 5px;
     }
-
-    /* 320                                */
-
-    @media only screen and (max-width: 320px){
-
-        .bloc_page{
-            width: 320px;
-            padding: 0;
-            margin: 0 auto;
-        }
-
-        .logo img{
-            width: 90px;
-            height: 40px;
-        }
-    
-        header h1, section h1, aside h1, footer h1{
-            font-size: 1.3em;
-        }
-    
-        header h1{
-            margin-left:10px;
-            margin-top: 80px;
-        }    
-        body p{
-            font-size: 1em;
-        }
-
-        nav ul{
-            list-style-type: none;
-            display: flex;
-    
-            position: relative; top: 0; left: 0;
-            margin-top: -260px;
-            margin-bottom: 250px;
-            margin-left: -15px;
-        }
-        
-        nav li a{
-            font-size: 0.9em;
-        }
-        
-        #actact{
-            padding: 0px 49px 20px 45px;
-            margin-left: 132px;
-        }
-    
-        #hebheb{
-            padding: 0px 40px 20px 40px;
-            margin-left: -30px;
-        }
-        
-        #inscrire{
-            margin-left: 155px;
-            margin-top: -60px;
-        }
-
-        .recherche input[type=text]{
-            width: 230px;
-          }
-        
-        .bouton{
-            margin-left: 250px;
-        }
-        
-        .bouton a{
-            display: none;
-        }
-    
-        .mob_bouton{
-            margin-left: 268px;
-        }
-
-        .filtres{
-            font-size: 0.9em;
-            font-weight: bold;
-            
-            margin-top: -5px;
-            width: 100%;
-            height: 270px;
-            margin-left: -10px;
-        }
-        
-        .filtres ul{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-content: space-around;
-            
-            height: 200px;
-            width: 320px;
-            margin: 0 auto;
-            
-        }
-    
-        .filtres b{
-            position: absolute; left: 20px;
-            margin-top: -235px;
-            margin-bottom: 10px;
-            font-size: 1em;
-            margin-left: -5px;
-            
-        }
-    
-        .filtres a{
-            color: black; 
-            margin-left: -40px;
-            margin-top: 30px;
-            
-            border: 1px rgb(170, 177, 187) solid;
-            padding: 10px 15px 10px 30px;
-            border-radius: 5px 30px 30px 5px;
-            
-            
-        }
-    
-        .filtres li{
-            height: 20%;
-            margin-top: 10px;
-            margin-left: 30px;
-            width: 20%;
-            
-        }
-
-        #fam_mob{
-            margin-left: 115px;
-            margin-top: 12px;
-        }
-
-    
-        .money{
-            height: 38px;
-            width: 43px;
-            
-            margin-left: 5px;
-            margin-top: -198px;
-        }
-    
-        .money i{    
-            right: -12px;
-            bottom: -11px;
-        }
-        
-        .child{
-            height: 38px;
-            width: 43px;
-            
-            margin-left: 120px;
-            margin-top: -196px;
-         }
-        
-         .child i{
-            right: -16px;
-            bottom: -12px;
-        }
-    
-        .heart{
-            height: 38px;
-            width: 43px;
-            
-            margin-left: -206px;
-            margin-top: -130px;
-         }
-        
-        .heart i{
-            right: -14px;
-            bottom: -12px;
-        }
-    
-        .dog {
-            height: 38px;
-            width: 43px;
-            
-            margin-left: -42px;
-            margin-top: -64px;
-         }
-        
-         .dog i{
-            right: -14px;
-            bottom: -10px;
-        }
-
-        .infos{
-            width: 310px;
-        }
-        .infos p{
-            margin-left: -15px;
-        }
-
-        #hebergements{
-            height: 1550px;
-            width: 310px; 
-            display: flex;
-            
-            margin-top: 625px;
-            margin-left: 0px;
-            margin-bottom: 400px;
-            background-color: white;
-        }
-
-        .pport{
-            margin-top: 0px;
-        }
-        
-    
-        #heb_title h1{
-            font-size: 1.1em;
-        }
-    
-        #hebergements img{
-            width: 270px;
-            height: 100px;
-            margin-top: 1px;
-            margin-left: 5px;
-           
-        }
-        
-        #hebergements figure{
-            width: 280px;
-            height: 190px;
-
-            margin-top: 120px; 
-            margin-left: 13px;
-            margin-bottom: -65px;
-        }
-        
-        #hebergements p{
-            margin-top: 4px;
-        }
-    
-        .aff_plus{
-            position: fixed; top: 0; left:0;
-            margin-top: 1500px;
-        }
-
-        aside{
-            height: 600px;
-            width: 310px; 
-
-            margin-left: 0px;
-            margin-top: -2560px;
-            margin-bottom: 1580px;
-        }
-    
-        #tit_pop h2{
-            font-size: 1.1em;
-        }
-    
-        aside figure{
-            width: 290px;
-            height: 140px;
-         
-            margin-left: 9px;
-            margin-top: -20px;
-        }
-        
-        aside figcaption{
-            margin-top: -5px;
-        }
-    
-        aside img{
-            width: 110px;
-            height: 130px;
-            border-radius: 20px 0px 0px 20px;
-            margin-top: -8px;
-            margin-left: 5px;
-        }
-        
-        aside p{
-            font-size: 0.9em;
-        }
-    
-        .rating{
-            margin-top: 20px;
-        }
-
-        #activites{
-            width: 310px;
-            height: 1400px;
-            
-            margin-left: -4px;
-        }
-    
-        #activites h2{
-            margin-left: 15px;
-        }
-
-        #act_1 {
-            margin-top: -20px;
-        }
-    
-        #act_1 .big_a{
-            margin-top: -25px;
-           
-            margin-bottom: -70px;
-            height: 200px ;
-    
-        }
-    
-        #act_1 figure{
-            width: 295px;
-            margin-bottom: 100px;
-            
-        }
-    
-        #frioul{
-            margin-top: -100px;
-            object-fit: cover;
-            object-position: bottom;
-        }
-
-        #garde {
-            object-fit: cover;
-        }
-
-        #longchamp{
-            object-fit: cover;
-        }
-    
-        #activites img{
-            width: 295px;
-            height: 120px;
-        }
-    
-        #act_2 .big_a{
-            margin-left: -15px;
-            margin-bottom: -300px;
-        }
-    
-        #act_2{
-            margin-top: -95px;
-            
-        }
-    
-        #act_2 figure{
-            width: 295px;
-        }
-    
-        #longchamp{
-            margin-top: -12px;
-        }
-
-        footer{
-            width: 275px;
-            height: 450px;
-    
-            margin-left: -7px;
-            margin-top: -150px;
-        }
-    
-        footer div{
-            width: 260px;
-        }
-
-        footer p{
-            font-weight: bold;
-        }
-    
-    }
-
 }
 
-@media only screen and (min-width: 376px) and (max-width: 737px){
+@media only screen and (min-width: 376px) and (max-width: 425px){
 
     .bloc_page{
         max-width: 425px;
